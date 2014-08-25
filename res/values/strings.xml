@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-   Tint Browser for Android
+   Tjapoe Ghoemakker Android ke khatien. Internet ke sab se pehla ghoemakker djaun ek Sarnám ke bhasa mè banail hai. 
   
-   Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
+   Bhasa aur modification copyright - Aristorat aur DS Hwang / Based on Tjapoe Browser - Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
@@ -14,567 +13,455 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
  -->
-
 <resources>
-
-    <string name="ApplicationName">Tint Browser</string>
-    <string name="ApplicationDescription">Tint Browser is an open-source browser for Android.</string>
-    
-    <string name="AboutVersionText">Version: %1$s (%2$s)</string>
-    <string name="AboutLicenseText">License: GPLv3</string>
-    <string name="AboutUrlText">https://github.com/Anasthase/TintBrowser</string>
-    
-    <string name="PermissionReadBookmarksLabel">Read Tint Browser bookmarks</string>
-    <string name="PermissionReadBookmarksDescription">Allow third-party applications or addons to read Tint Browser\'s history and bookmarks database.</string>
-    
-	<string name="PermissionWriteBookmarksLabel">Write Tint Browser bookmarks</string>
-    <string name="PermissionWriteBookmarksDescription">Allow third-party applications or addons to write Tint Browser\'s history and bookmarks database.</string>    
-    
-    <string name="PermissionBindAddonServiceLabel">Bind Tint Browser addons services</string>
-    <string name="PermissionBindAddonServiceDescription">Allow an application to bind to Tint Browser\'s addons services. Only Tint Browser itself should have this permission.</string>
-    
-    <string name="OK">OK</string>
-    <string name="Cancel">Cancel</string>
-    <string name="Yes">Yes</string>
-    <string name="No">No</string>
-    <string name="On">ON</string>
-    <string name="Off">OFF</string>
-    <string name="Clear">Clear</string>
-    <string name="Continue">Continue</string>
-    <string name="Proceed">Proceed</string>
-    <string name="VideoLoading">Loading video\u2026</string>
-    <string name="History">History</string>
-    <string name="All">All</string>
-    <string name="Bookmarks">Bookmarks</string>
-    <string name="Preferences">Settings</string>
-    
-    <string name="UrlBarUrlDefaultSubTitle">Tap to enter an URL or a search.</string>
-    <string name="UrlBarUrlHint">Enter a search or an URL</string>
-    
-    <string name="ShareChooserTitle">Share via</string>
-    <string name="FileChooserPrompt">Choose file for upload</string>
-    
-    <string name="Download">Download</string>
-    <string name="DownloadDialogTitle">Download</string>
-    <string name="DownloadInIncognito">Incognito download</string>
-    <string name="DownloadStart">Downloading %1$s&#8230;</string>
-    <string name="DownloadComplete">Download complete.</string>
-    <string name="DownloadFailedWithErrorMessage">Download failed: %1$s.</string>
-    <string name="DownloadErrorDisk">Disk error, check if you have a storage media, and if it has enough space left.</string>
-    <string name="DownloadErrorHttp">HTTP error</string>
-    <string name="DownloadErrorRedirection">Too many redirections</string>
-    <string name="DownloadErrorUnknown">Unknown error</string>
-    
-    <string name="ContextMenuOpen">Open</string>
-    <string name="ContextMenuOpenNewTab">Open in a new tab</string>
-    <string name="ContextMenuCopyLinkUrl">Copy link URL</string>
-    <string name="ContextMenuDownload">Download</string>
-    <string name="ContextMenuShareLinkUrl">Share link</string>
-    
-    <string name="ContextMenuViewImage">View image</string>
-    <string name="ContextMenuCopyImageUrl">Copy image url</string>
-    <string name="ContextMenuDownloadImage">Download image</string>
-    <string name="ContextMenuShareImageUrl">Share image</string>
-    
-    <string name="ContextMenuSendEmail">Send email</string>
-    <string name="ContextMenuCopyEmailUrl">Copy email url</string>
-    <string name="ContextMenuShareEmailUrl">Share email</string>
-    
-    <string name="UrlCopyToastMessage">Url copied to clipboard.</string>
-    <string name="ContextMenuShareUrl">Share</string>
-    
-    <string name="JavaScriptAlertDialog">JavaScript alert dialog</string>
-    <string name="JavaScriptConfirmDialog">JavaScript confirm dialog</string>
-    <string name="JavaScriptPromptDialog">JavaScript prompt dialog</string>    
-	
-	<string name="SslWarning">Security warning</string>
-	<string name="SslWarningsHeader">There are problems with the security certificate for this site (%s).</string>
-	<string name="SslUntrusted">This certificate is not from a trusted authority.</string>
-	<string name="SslIDMismatch">The name of the site does not match the name on the certificate.</string>
-	<string name="SslExpired">This certificate has expired.</string>
-	<string name="SslNotYetValid">This certificate is not valid yet.</string>    
-        
-    <string name="NewTab">New tab</string>
-        
-    <string name="CloseTab">Close current tab</string>
-    <string name="AddBookmark">Add bookmark</string>
-    <string name="SharePage">Share page</string>
-    <string name="Search">Find on page</string>
-    
-    <string name="BookmarksTitle">Bookmarks &amp; History</string>
-    <string name="BookmarksTabTitle">Bookmarks</string>
-    <string name="HistoryTabTitle">History</string>
-    
-    <string name="ImportHistoryBookmarks">Import</string>
-    <string name="ExportHistoryBookmarks">Export</string>
-    <string name="ClearHistoryBookmarks">Clear</string>
-    
-    <string name="AddBookmarkTitle">Add bookmark</string>
-    <string name="BookmarkText">Label</string>
-    <string name="UrlText">Address</string>
-    <string name="UrlHint">http://</string>
-    <string name="AddBookmarkLabelOrUrlEmpty">Please provide a valid label and url.</string>
-    
-    <string name="OpenInTab">Open in a new tab</string>
-    <string name="EditBookmark">Edit bookmark</string>
-    <string name="CopyUrl">Copy url</string>
-    <string name="DeleteBookmark">Delete bookmark</string>
-    <string name="DeleteHistoryItem">Delete from history</string>
-    
-    <string name="PreferencesActivityTitle">Settings</string>
-        
-    <string name="PreferenceHeaderGeneralSettingsTitle">General settings</string>
-    
-    <string name="PreferenceGeneralHomepageTitle">Home page</string>
-    <string name="PreferenceGeneralHomepageSummary">Set the home page to load when opening a new tab, etc.</string>
-    <string name="PreferenceHomePageDialogTitle">Home page</string>
-    
-    <string name="PreferenceGeneralSearchUrlTitle">Search engine</string>
-    <string name="PreferenceGeneralSearchUrlSummary">Set the search engine used to make default search from the url bar.</string>
-    
-    <string name="PreferenceCategoryStartPageTitle">Start page</string>
-    <string name="PreferenceGeneralStartPageLimitTitle">Number of items in the start page</string>
-    <string name="PreferenceGeneralStartPageLimitSummary">Set the number of items to show in the start page.</string>
-    
-    <string name="PreferenceCategoryUITitle">User interface</string>
-        
-    <string name="PreferenceBubblePositionTitle">Bubble position</string>
-    <string name="PreferenceBubblePositionSummary">Position of the bubble allowing to show the toolbars.</string>
-    
-    <string name="PreferenceBubblePositionRight">Right</string>
-    <string name="PreferenceBubblePositionLeft">Left</string>
-    <string name="PreferenceBubblePositionBoth">Both</string>
-    
-    <string-array name="PreferenceBubblePositionEntries">
-		<item>@string/PreferenceBubblePositionRight</item>
-		<item>@string/PreferenceBubblePositionLeft</item>
-		<item>@string/PreferenceBubblePositionBoth</item>
-	</string-array>
-	
-    <string-array name="PreferenceBubblePositionValues">
-		<item>RIGHT</item>
-		<item>LEFT</item>
-		<item>BOTH</item>
-	</string-array>
-	
-    <string name="PreferenceToolbarsAutoHideDurationTitle">Toolbars display duration</string>
-    <string name="PreferenceToolbarsAutoHideDurationSummary">Set how long toolbars are shown, in seconds.</string>
-    
-    <string name="PreferenceSwitchTabsMethodTitle">Switch tabs method</string>
-    <string name="PreferenceSwitchTabsMethodSummary">Set how you can switch between tabs.</string>
-    
-    <string name="PreferenceSwitchTabsMethodButtons">Buttons</string>
-    <string name="PreferenceSwitchTabsMethodFling">Fling</string>
-    <string name="PreferenceSwitchTabsMethodBoth">Both</string>
-    
-    <string-array name="PreferenceSwitchTabsMethodEntries">
-		<item>@string/PreferenceSwitchTabsMethodButtons</item>
-		<item>@string/PreferenceSwitchTabsMethodFling</item>
-		<item>@string/PreferenceSwitchTabsMethodBoth</item>
-	</string-array>
-	
-    <string-array name="PreferenceSwitchTabsMethodValues">
-		<item>BUTTONS</item>
-		<item>FLING</item>
-		<item>BOTH</item>
-	</string-array>
-    
-    <string name="PreferenceHeaderBrowserSettingsTitle">Browser settings</string>
-    
-    <string name="PreferenceEnableJavascriptTitle">Enable JavaScript</string>
-    <string name="PreferenceEnableJavascriptSummaryOn">JavaScript is enabled.</string>
-    <string name="PreferenceEnableJavascriptSummaryOff">JavaScript is disabled.</string>
-    <string name="PreferenceEnableImagesTitle">Enable images</string>
-    <string name="PreferenceEnableImagesSummary">Check if you want to load images.</string>
-    <string name="PreferenceUseWideViewportTitle">Use wide view port</string>
-    <string name="PreferenceUseWideViewportSummary">If checked, browser will use a viewport similar to desktop browsers.</string>
-    <string name="PreferenceLoadPagesWithOverviewTitle">Load pages with overview</string>
-    <string name="PreferenceLoadPagesWithOverviewSummary">Check if you want to load pages zoomed out to show an overview of the page.</string>
-    <string name="PreferencePluginsTitle">Enable plugins</string>
-    <string name="PreferencePluginsSummary">Choose how to manage plugins.</string>
-    
-    <string name="PreferencePluginsAlwaysOff">Always off</string>
-    <string name="PreferencePluginsOnDemand">On demand</string>
-    <string name="PreferencePluginsAlwaysOn">Always on</string>
-    
-    <string-array name="PreferencePluginsEntries">
-		<item>@string/PreferencePluginsAlwaysOff</item>
-		<item>@string/PreferencePluginsOnDemand</item>
-		<item>@string/PreferencePluginsAlwaysOn</item>
-	</string-array>
-	
-    <string-array name="PreferencePluginsValues">
-		<item>OFF</item>
-		<item>ON_DEMAND</item>
-		<item>ON</item>
-	</string-array>
-	
-    <string name="PreferenceUserAgentTitle">User-agent</string>
-    <string name="PreferenceUserAgentSummary">Set the user-agent string used by the browser.</string>
-    <string name="PreferenceUserAgentDialogTitle">User-agent</string>
-    
-    <string name="PreferenceHeaderPrivacySettingsTitle">Privacy &amp; security settings</string>
-    
-    <string name="PreferencePrivacyClearCacheTitle">Clear cache</string>
-    <string name="PreferencePrivacyClearCacheSummary">Clear locally cached content and databases.</string>
-        
-    <string name="PreferenceCategoryHistoryTitle">History</string>
-    <string name="PreferencePrivacyHistorySizeTitle">History size</string>
-    <string name="PreferencePrivacyHistorySizeSummary">Define the history size, in days.</string>
-    <string name="PreferencePrivacyClearHistoryTitle">Clear history</string>
-    <string name="PreferencePrivacyClearHistorySummary">Clear the browser navigation history.</string>
-        
-    <string name="PreferenceCategoryCookiesTitle">Cookies</string>
-    <string name="PreferencePrivacyAcceptCookiesTitle">Accept cookies</string>
-    <string name="PreferencePrivacyAcceptCookiesSummary">Allow sites to save and read cookie data.</string>
-    <string name="PreferencePrivacyClearCookiesTitle">Clear cookies</string>
-    <string name="PreferencePrivacyClearCookiesSummary">Clear all browser cookies.</string>
-    
-    <string name="PreferenceCategoryGeolocationTitle">Location</string>
-    <string name="PreferencePrivacyEnableGeolocationTitle">Enable location</string>
-    <string name="PreferencePrivacyEnableGeolocationSummary">Allow sites to request access to your location.</string>
-    <string name="PreferencePrivacyClearGeolocationTitle">Clear location access</string>
-    <string name="PreferencePrivacyClearGeolocationSummary">Clear location access for all websites.</string>
-    
-    <string name="PreferenceCategoryFormDataTitle">Form Data</string>
-    <string name="PreferencePrivacyRememberFormDataTitle">Remember form data</string>
-    <string name="PreferencePrivacyRememberFormDataSummary">Remember data i type in forms for later use.</string>
-    <string name="PreferencePrivacyClearFormDataTitle">Clear form data</string>
-    <string name="PreferencePrivacyClearFormDataSummary">Clear all saved form data.</string>
-    
-    <string name="PreferenceCategoryPasswordsTitle">Passwords</string>
-    <string name="PreferencePrivacyRememberPasswordsTitle">Remember passwords</string>
-    <string name="PreferencePrivacyRememberPasswordsSummary">Save usernames and passwords for websites.</string>
-    <string name="PreferencePrivacyClearPasswordsTitle">Clear passwords</string>
-    <string name="PreferencePrivacyClearPasswordsSummary">Clear all saved passwords.</string>
-    
-    <string name="PreferencePrivacyWebsitesSettingsTitle">Websites settings</string>
-    <string name="PreferencePrivacyWebsitesSettingsSummary">Advanced settings for individual websites.</string>
-    
-    <string name="PreferencePrivacyIncognitoTitle">Incognito mode</string>
-    <string name="PreferencePrivacyIncognitoDefaultTitle">Incognito by default</string>
-    <string name="PreferencePrivacyIncognitoDefaultSummary">Open new tabs in incognito mode</string>
-    
-    <string name="HistoryToday">Today</string>
-    <string name="HistoryYesterday">Yesterday</string>
-    <string name="HistoryLastSevenDays">Last 7 days</string>
-    <string name="HistoryLastMonth">Last month</string>
-    <string name="HistoryOlder">Older</string>
-    
-    <string name="ClearCacheMessage">Delete locally cached content and databases?</string>
-    <string name="ClearHistoryMessage">Delete the browser navigation history?</string>
-    <string name="ClearCookiesMessage">Delete all cookies?</string>
-    <string name="ClearGeolocationMessage">Clear websites location access?</string>
-    <string name="ClearFormDataMessage">Delete all saved form data?</string>
-    <string name="ClearPasswordsMessage">Delete all saved passwords?</string>
-    
-    <string name="PreferenceHomepageStart">Start page</string>
-    <string name="PreferenceHomepageBlank">Blank page</string>
-    <string name="PreferenceHomepageCustom">Custom page</string>
-    
-    <string-array name="HomepageTitles">
-        <item>@string/PreferenceHomepageStart</item>
-        <item>@string/PreferenceHomepageBlank</item>
-        <item>@string/PreferenceHomepageCustom</item>
-    </string-array>
-    
-    <string name="PreferenceUserAgentAndroid">Android</string>
-    <string name="PreferenceUserAgentDesktop">Desktop</string>
-    <string name="PreferenceUserAgentOther">Other</string>
-    
-    <string-array name="UserAgentsTitles">
-        <item>@string/PreferenceUserAgentAndroid</item>
-        <item>@string/PreferenceUserAgentDesktop</item>
-        <item>@string/PreferenceUserAgentOther</item>
-    </string-array>
-    
-    <string name="SearchUrlGoogle">http://www.google.com/m?q={searchTerms}</string>
-    
-    <string name="PreferenceHeaderAddonsTitle">Addons</string>    
-    
-    <string name="PreferenceHeaderAboutTitle">About</string>
-    
-    <string name="HttpAuthenticationDialogDialogTitle">Sign in to %1$s - %2$s</string>
-    <string name="HttpAuthenticationDialogUserName">Name</string>
-    <string name="HttpAuthenticationDialogPassword">Password</string>
-    
-    <string name="FormResubmitTitle">Form resubmission</string>
-    <string name="FormResubmitMessage">The page you\'re trying to view contains data that has already been submitted (\"POSTDATA\"). If you resend the data, any action the form on the page carried out (such as a search or online purchase) will be repeated.</string>
-    
-    <string name="BookmarkAdded">Added to bookmarks.</string>
-    <string name="BookmarkRemoved">Removed from bookmarks.</string>
-    
-    <string name="SDCardErrorNoSDMsg">No SD Card found.</string>
-    <string name="SDCardErrorSDUnavailable">SD Card is not available.</string>
-    
-    <string name="HistoryBookmarksClearTitle">Clear</string>
-    
-    <string-array name="ClearHistoryBookmarksChoice">
-        <item>@string/History</item>
-        <item>@string/Bookmarks</item>
-        <item>@string/All</item>
-    </string-array>
-    
-    <string name="HistoryBookmarksImportSourceTitle">Import file</string>
-    <string name="HistoryBookmarksImportFileUnavailable">Unavailable file, either it does not exists or is unreadable.</string>
-    <string name="HistoryBookmarksImportTitle">History &amp; bookmarks import</string>
-    <string name="HistoryBookmarksImportInitialMessage">Importing history &amp; bookmarks&#8230;</string>
-    <string name="HistoryBookmarksImportReadingFile">Reading file&#8230;</string>
-    <string name="HistoryBookmarksImportParsingFile">Parsing file&#8230;</string>
-    <string name="HistoryBookmarksImportProgressMessage">Reading item %1$s of %2$s.</string>
-    <string name="HistoryBookmarksImportInsertMessage">Inserting values&#8230;</string>
-    <string name="HistoryBookmarksImportErrorTitle">Error during import</string>
-    <string name="HistoryBookmarksImportErrorMessage">An error occurred during history &amp; bookmarks import: %s</string>
-    
-    <string name="HistoryBookmarksExportTitle">History &amp; bookmarks export</string>
-    <string name="HistoryBookmarksExportInitialMessage">Exporting history &amp; bookmarks&#8230;</string>
-    <string name="HistoryBookmarksExportCheckCardMessage">Checking external storage&#8230;</string>
-    <string name="HistoryBookmarksExportProgressMessage">Exporting item %1$s of %2$s.</string>
-    <string name="HistoryBookmarksExportErrorTitle">Error during export</string>
-    <string name="HistoryBookmarksExportErrorMessage">An error occurred during history &amp; bookmarks export: %s</string>
-    
-    <string name="GeolocationTitle">Location request</string>
-    <string name="GeolocationMessage">Website %s request access to your location.</string>    
-    <string name="GeolocationAccept">Accept</string>
-    <string name="GeolocationDecline">Decline</string>
-    
-    <string name="WebsitesSettingsEmpty">No settings for websites.</string>
-    
-    <string name="WebsitesSettingsSiteTitle">Settings for %s</string>
-    
-    <string name="WebsitesSettingsDataUsage">%s MB stored on your device.</string>
-    <string name="WebsitesSettingsDataClickToClear">Click to clear stored data.</string>
-    <string name="WebsitesSettingsCleatDataDialogTitle">Delete data</string>
-    <string name="WebsitesSettingsCleatDataDialogMessage">Delete all data stored by this website?</string>
-    
-    <string name="WebsitesSettingsGeolocationClickToClear">Click to clear location access.</string>
-    <string name="WebsitesSettingsGeolocationAllowed">This site can access to your location.</string>
-    <string name="WebsitesSettingsGeolocationNotAllowed">This site cannot access to your location.</string>
-    <string name="WebsitesSettingsGeolocationPageDialogTitle">Clear location access</string>
-    <string name="WebsitesSettingsGeolocationPageDialogMessage">Clear location access for this website?</string>
-    
-    <string name="AddonsWarningText">Please install only addons from developers you trust. If you experience weird behaviors, disable all your addons.</string>
-    <string name="AddonsGetAddons"><a href="">Get addons</a></string>
-    <string name="AddonsMarketNotFoundTitle">Android Market not found</string>
-    <string name="AddonsMarketNotFoundMessage">You do not seems to have the Android Market application on your device.</string>
-    <string name="AddonsEnableAll">Enable all</string>
-    <string name="AddonsDisableAll">Disable all</string>
-    
-    <string name="AddonDetailsContact">Contact: %s</string>
-    <string name="AddonDetailsUsedCallbacksTitle">This addon:</string>
-    
-    <string name="AddonCallbackPageStarted">Is notified when a page starts loading.</string>
-    <string name="AddonCallbackPageFinished">Is notified when a page finish loading.</string>
-    <string name="AddonCallbackTabOpened">Is notified when a tab is opened.</string>
-    <string name="AddonCallbackTabClosed">Is notified when a tab is closed.</string>
-    <string name="AddonCallbackTabSwitched">Is notified when switching tabs.</string>
-    <string name="AddonCallbackHasPreferencesPage">Has a settings page.</string>
-    <string name="AddonCallbackContributeMainMenu">Can contribute to the main menu.</string>
-    <string name="AddonCallbackContributeLinkContextMenu">Can contribute to the link context menu.</string>
-    <string name="AddonCallbackContributeHistoryBookmarksMenu">Can contribute to the bookmarks &amp; history menu.</string>
-    <string name="AddonCallbackContributeBookmarkContextMenu">Can contribute to the bookmark context menu.</string>
-    <string name="AddonCallbackContributeHistoryContextMenu">Can contribute to the history context menu.</string>
-    
-    <string name="AddonDetailsUsedPermissionsTitle">Has the following permissions:</string>
-    <string name="AddonDetailsPermissionsNone">None.</string>
-    <string name="AddonDetailsUnableToGetPermissions">Unable to get permissions. Check them with the application manager of your device.</string>
-    
-    <string name="ContentDescriptionDivider">divider</string>
-    <string name="ContentDescriptionApplicationIcon">Application icon</string>
-    <string name="ContentDescriptionSuggestionIcon">Suggestion favicon</string>
-    <string name="ContentDescriptionBookmarkThumbnail">Bookmark thumbnail</string>
-    <string name="ContentDescriptionFavicon">Website`s favicon</string>
-    <string name="ContentDescriptionGoStopReloadButton">Go / Stop / Reload button</string>
-    <string name="ContentDescriptionMenuButton">Menu button</string>
-    <string name="ContentDescriptionPreviousTabButton">Previous tab button</string>
-    <string name="ContentDescriptionNextTabButton">Next tab button</string>
-    <string name="ContentDescriptionLeftBubble">Left bubble</string>
-    <string name="ContentDescriptionRightBubble">Right bubble</string>
-    <string name="ContentDescriptionBackButton">Back button</string>
-    <string name="ContentDescriptionCloseTabButton">Close tab button</string>
-    <string name="ContentDescriptionBookmarksButton">Bookmarks button</string>
-    <string name="ContentDescriptionNewTabButton">New tab button</string>
-    <string name="ContentDescriptionForwardButton">Forward button</string>
-    <string name="ContentDescriptionHomeButton">Home button</string>
-    <string name="ContentDescriptionWebsiteSettingsLocation">Website location</string>
-    <string name="ContentDescriptionWebsiteSettingsUsage">Website usage</string>
-    <string name="ContentDescriptionWebsiteSettingsFeature">Website feature</string>
-    
-    <string-array name="DefaultBookmarksTitles">
-		<item>Google</item>
-		<item>Wikipedia</item>
-		<item>YouTube</item>
-		<item>Yahoo!</item>
-		<item>BBC</item>
-		<item>eBay</item>
-	</string-array>
-	
-    <string-array name="DefaultBookmarksUrls">
-		<item>http://www.google.com/</item>
-		<item>http://en.wikipedia.org/</item>
-		<item>http://www.youtube.com/</item>
-		<item>http://www.yahoo.com/</item>
-		<item>http://www.bbc.co.uk/</item>
-		<item>http://www.ebay.com/</item>
-	</string-array>
-	
-    <!-- 1.2 -->
-    <string name="IncognitoTab">Incognito tab</string>
-    <string name="ContextMenuOpenInBackground">Open in background</string>
-    <string name="ContentDescriptionPrivateBrowsingIndicator">Private browsing indicator</string>
-    
-    <!-- 1.3 -->
-    <string name="Folder">Folder</string>
-    <string name="NewFolder">New folder</string>    
-    <string name="NewFolderHint">Name of the new folder</string>
-    <string name="ProvideNewFolderName">Please provide a name for the new folder, or choose an existing one.</string>
-    
-    <string name="DeleteFolder">Delete folder</string>
-    <string name="ConfirmDeleteFolderMessage">Delete this folder and all its content?</string>
-    <string name="DeleteFolderTitle">Deleting folder</string>
-    <string name="DeleteFolderMessage">Please wait while the folder and its content is being deleted&#8230;</string>
-    
-    <string name="ContentDescriptionBookmarksFoldersBack">Go back in bookmarks folders hierarchy</string>
-    
-    <!-- 1.4 -->
-    <string name="PreferenceHeaderAccessibilityTitle">Accessibility settings</string>
-    <string name="PreferenceCategoryTextSizeTitle">Text size</string>
-    <string name="PreferenceAccessibilityTextSizePreviewTitle">Text size preview</string>
-    <string name="PreferenceAccessibilityTextScalingTitle">Text scaling</string>
-    <string name="PreferenceAccessibilityMinimumFontSizeTitle">Minimum font size</string>
-    <string name="PreferenceAccessibilityMinimumFontSizeSummary">Set the minimum font size used to display text in the browser.</string>
-    
-    <string name="FontPreviewTextTiny">Tiny</string>
-    <string name="FontPreviewTextSmall">Small</string>
-    <string name="FontPreviewTextNormal">Normal</string>
-    <string name="FontPreviewTextLarge">Large</string>
-    <string name="FontPreviewTextHuge">Huge</string>
-    
-    <string-array name="FontPreviewText">
-		<item>@string/FontPreviewTextTiny</item>
-		<item>@string/FontPreviewTextSmall</item>
-		<item>@string/FontPreviewTextNormal</item>
-		<item>@string/FontPreviewTextLarge</item>
-		<item>@string/FontPreviewTextHuge</item>
-	</string-array>
-	
-    <string name="PreferenceCategoryInvertedScreenRenderingTitle">Inverted screen rendering</string>
-    <string name="PreferenceAccessibilityInvertedRenderingTitle">Inverted rendering</string>
-    <string name="PreferenceAccessibilityInvertedRenderingSummary">Invert the screen colors. This may not works on all devices.</string>
-    <string name="PreferenceAccessibilityInvertedRenderingContrastTitle">Contrast</string>
-    
-    <string name="ContentDescriptionAutocompleteQueryBuilder">Put suggestion url in the url bar, without navigating to it.</string>
-    
-    <!-- 1.5 -->
-    <string name="UnknownAutority">unknown authority</string>
-    <string name="RememberMyChoice">Remember my choice</string>
-    <string name="SslExceptionAccessAllowedByUserToast">SSL security exception: Access allowed to %s by user.</string>
-    <string name="SslExceptionAccessDisallowedByUserToast">SSL security exception: Access disallowed to %s by user.</string>
-    
-    <string name="PreferenceSslExceptionsTitle">SSL security exceptions</string>
-    <string name="PreferenceSslExceptionsSummary">List of SSL security exceptions by websites.</string>
-    <string name="SslExceptionWebsitesText"><i>Click to remove the exception.</i></string>
-    <string name="SslExceptionEmptyText">You do not have any SSL security exception.</string>
-    
-    <string name="RemoveSslExceptionTitle">Remove exception</string>
-    <string name="RemoveSslExceptionMessage">Do you want to remove the security exception for this website?</string>
-    
-    <string name="SslInvalid">This certificate is invalid.</string>
-    <string name="SslDateInvalid">This certificate date is invalid.</string>
-    
-    <string name="Authorized">Authorized:</string>
-    <string name="Reasons">Reasons:</string>
-    
-    <string name="SearchUrlDialogText1">Your search engine is currently set to:</string>
-    <string name="SearchUrlDialogText2">You can customize it by choosing a search engine proposed below.</string>
-    <string name="SearchUrlGetOnline"><a href="">Manually edit the search engine</a></string>    
-    <string name="SearchUrlConnecting">Connecting&#8230;</string>
-    <string name="SearchUrlParsing">Parsing results&#8230;</string>
-    <string name="SearchUrlBadResponseCodeMessage">Unable to connect to search engine repository (response code: %s).</string>
-    
-    <string name="SearchUrlDefault">Google worldwide</string>
-    <string name="SearchUrlCustom">Custom search engine</string>
-    
-    <string name="SortBookmarks">Sort bookmarks</string>    
-    <string name="MostUsedSortMode">Most used</string>
-    <string name="AlphaSortMode">Alphabetically</string>
-    <string name="RecentSortMode">Most recently visited</string>
-
-    <!-- 1.6 -->
-    <string name="HistoryBookmarksImportErrorInvalidFileFormat">Invalid file format</string>
-    <string name="HistoryBookmarksImportFoldersProgressMessage">Reading folder %1$s of %2$s.</string>
-    <string name="HistoryBookmarksImportFoldersLinkMessage">Linking folders&#8230;</string>
-    <string name="HistoryBookmarksImportBookmarksProgressMessage">Reading bookmark %1$s of %2$s.</string>
-    <string name="HistoryBookmarksImportHistoryProgressMessage">Reading history item %1$s of %2$s.</string>
-    
-    <string name="FullScreen">Full screen</string>
-    <string name="ContentDescriptionExitFullScreen">Exit full screen button</string>
-    
-    <!-- 1.7 -->
-    <string name="StartPageLabel">Start page</string>
-
-    <string name="RestartDialogTitle">Restart required</string>
-    <string name="RestartDialogMessage">This change will not take effect until the application restart. Do you want to do it now?</string>
-    
-    <string name="ContentDescriptionTabPreview">Tab preview</string>
-    
-    <string name="PreferenceClosePanelOnNewTabTitle">Close side panel on new tab</string>
-    <string name="PreferenceClosePanelOnNewTabSummary">If checked, the side panel will close when openning a new tab.</string>
-    
-    <string name="AboutChangelogTitle">Changelog</string>
-    <string name="AboutContributorsTitle">Contributors</string>
-    <string name="AboutLicensesTitle">Other licenses</string>
-    
-    <string name="RestoreTabsDialogTitle">Tabs restoration</string>
-    <string name="RestoreTabsDialogMessage">Do you want to restore the tabs from your previous session?</string>
-    
-    <string name="PreferenceRestoreTabsTitle">Tabs restoration</string>
-    <string name="PreferenceRestoreTabsSummary">Select how you want tabs to be restored from a previous session.</string>
-    
-    <string name="PreferenceRestoreTabsAsk">Ask</string>
-    <string name="PreferenceRestoreTabsAlways">Always</string>
-    <string name="PreferenceRestoreTabsNever">Never</string>
-    
-    <string-array name="PreferenceRestoreTabsEntries">
-		<item>@string/PreferenceRestoreTabsAsk</item>
-		<item>@string/PreferenceRestoreTabsAlways</item>
-		<item>@string/PreferenceRestoreTabsNever</item>
-	</string-array>
-	
-    <string-array name="PreferenceRestoreTabsValues">
-		<item>ASK</item>
-		<item>ALWAYS</item>
-		<item>NEVER</item>
-	</string-array>
-	
-    <string name="PreferenceUITypeTitle">UI type</string>
-    <string name="PreferenceUITypeSummary">Select the type of user interface.</string>
-    
-    <string name="PreferenceUITypeAuto">Automatic</string>
-    <string name="PreferenceUITypePhone">Phone</string>
-    <string name="PreferenceUITypeLegacyPhone">Phone (legacy)</string>
-    <string name="PreferenceUITypeTablet">Tablet</string>
-    
-    <string-array name="PreferenceUITypeEntries">
-		<item>@string/PreferenceUITypeAuto</item>
-		<item>@string/PreferenceUITypePhone</item>
-		<item>@string/PreferenceUITypeLegacyPhone</item>
-		<item>@string/PreferenceUITypeTablet</item>
-	</string-array>
-	
-    <string-array name="PreferenceUITypeValues">
-		<item>AUTO</item>
-		<item>PHONE</item>
-		<item>LEGACY_PHONE</item>
-		<item>TABLET</item>
-	</string-array>
-	
-    <!-- 1.8 -->
-    <string name="PreferenceDevelopersTitle">Developers</string>
-    
-    <string name="PreferenceJsLogOnLocatTitle">Log JS logs to logcat</string>
-    <string name="PreferenceJsLogOnLocatSummary">Redirect javascript logs to the logcat buffer.</string>
-    
-    <string name="ContextMenuViewImageInNewTab">View image in a new tab</string>
-    
+  <string name="ApplicationName">Tjapoe Browser [Ghoemakkar]</string>
+  <string name="ApplicationDescription">Tjapoe Browser ego khoolal-dhaara ghoemakkar hai, Android khatien.</string>
+  <string name="AboutVersionText">Kiesiem: %1$s (%2$s)</string>
+  <string name="AboutLicenseText">Rakam ke Hoekoem: GPLv3</string>
+  <string name="AboutUrlText">https://github.com/SarnamiD/Tjapoe</string>
+  <string name="PermissionReadBookmarksLabel">Tjapoe Browser ke sab pahietjaan taakal-djaai</string>
+  <string name="PermissionReadBookmarksDescription">App ki add-on djaun doesar manai banail hai, òke mag hai Tjapoe Browser ke itihaas aur sab pahietjaan ke taakhe ke. </string>
+  <string name="PermissionWriteBookmarksLabel">Tjapoe Browser ki pahietjaan banaaw.</string>
+  <string name="PermissionWriteBookmarksDescription">Hoekoem de, application ki add-on djaun doesar manai se banawal hai, Tjapoe Browser ke sab itihaas aur pahietjaan liekhe ke. </string>
+  <string name="PermissionBindAddonServiceLabel">Hoekoem de chale ke, Tjapoe Browser ke addon-kaaran djaun hai. </string>
+  <string name="PermissionBindAddonServiceDescription">Hoekoem de, doesar application ke, Tjapoe Browser addon services leke chale ke. Khalie Tjapoe Browser ke apne ehi hoekoem chaahin rehe ke. </string>
+  <string name="OK">Accha</string>
+  <string name="Cancel">Rokh</string>
+  <string name="Yes">Ha</string>
+  <string name="No">Na</string>
+  <string name="On">BAAR</string>
+  <string name="Off">BOETAA</string>
+  <string name="Clear">Safaa</string>
+  <string name="Continue">Doro djaa</string>
+  <string name="Proceed">Aage djaa</string>
+  <string name="VideoLoading">Laawe hai videowa\u2026 </string>
+  <string name="History">Itihaas</string>
+  <string name="All">Sab kuch</string>
+  <string name="Bookmarks">Pahietjaan</string>
+  <string name="Preferences">Magadj</string>
+  <string name="UrlBarUrlDefaultSubTitle">Dabaaw, ek URL ki khojwai ghoesère ke khatien. </string>
+  <string name="UrlBarUrlHint">URL ki khoj ghoeseer.</string>
+  <string name="ShareChooserTitle">Dekhaaw isè </string>
+  <string name="FileChooserPrompt">File tjoen, oepar pathaawe ke khat. </string>
+  <string name="Download">Hiyaan Laaw </string>
+  <string name="DownloadDialogTitle">Hiyaan Laaw </string>
+  <string name="DownloadInIncognito">Tjoep pe se hiyaan laaw </string>
+  <string name="DownloadStart">Laawe hai hiyaan %1$s… </string>
+  <string name="DownloadComplete">Ekdam hiyaan laais hai. </string>
+  <string name="DownloadFailedWithErrorMessage">Hiyaan na laai paais: %1$s.</string>
+  <string name="DownloadErrorDisk">Schijfwa fout dees hai, pehle taakh ki schijf ba ègo, fien taakh ki òpa djagaa ba abbe. </string>
+  <string name="DownloadErrorHttp">HTTP galtie </string>
+  <string name="DownloadErrorRedirection">Moerie-piera: Khalie hiyaan-huwaan pathaawe hai chiedjwa. </string>
+  <string name="DownloadErrorUnknown">Na-djaani ka bhail. </string>
+  <string name="ContextMenuOpen">Khòl </string>
+  <string name="ContextMenuOpenNewTab">Nawa kaagadj pe khòl. </string>
+  <string name="ContextMenuCopyLinkUrl">Keti URL dohoraaw </string>
+  <string name="ContextMenuDownload">Hiyaan laaw </string>
+  <string name="ContextMenuShareLinkUrl">Baath keti </string>
+  <string name="ContextMenuViewImage">Dekhaaw tasvier</string>
+  <string name="ContextMenuCopyImageUrl">Dohoraaw tasvier ke url </string>
+  <string name="ContextMenuDownloadImage">Hiyaan laaw tasvier </string>
+  <string name="ContextMenuShareImageUrl">Baath tasvieriya </string>
+  <string name="ContextMenuSendEmail">Pathaaw mail </string>
+  <string name="ContextMenuCopyEmailUrl">Dohoraaw e-mail url </string>
+  <string name="ContextMenuShareEmailUrl">Baath e-mail </string>
+  <string name="UrlCopyToastMessage">Url dohoraan hai </string>
+  <string name="ContextMenuShareUrl">Baato </string>
+  <string name="JavaScriptAlertDialog">JavaScript pe khiaalwè kar </string>
+  <string name="JavaScriptConfirmDialog">Javascript maange djaane kuchoe </string>
+  <string name="JavaScriptPromptDialog">Javascript baat-batia </string>
+  <string name="SslWarning">Raccha ke mienaahie </string>
+  <string name="SslWarningsHeader">Ehi sitewa ke raccha-bole, gharbharaai dewe hai (%s).</string>
+  <string name="SslUntrusted">Ehi raccha-bole pe na bieswaas karsakal djaai. </string>
+  <string name="SslIDMismatch">Sitewa ke naam, raccha-bole ke naam se na karaar hai. </string>
+  <string name="SslExpired">Ehi raccha-bole sarge hai. </string>
+  <string name="SslNotYetValid">Ehi raccha-bole abbe pe bharosa na dhar paaiye. </string>
+  <string name="NewTab">Nawa kaagadj </string>
+  <string name="CloseTab">Ehi kaagadj bandh kar. </string>
+  <string name="AddBookmark">Pahietjaan banaaw </string>
+  <string name="SharePage">Bator, ehi kaagadj </string>
+  <string name="Search">Kaagadj pe khoj </string>
+  <string name="BookmarksTitle">Pahietjaan &amp; Itihaas </string>
+  <string name="BookmarksTabTitle">Pahietjaan </string>
+  <string name="HistoryTabTitle">Itihaas </string>
+  <string name="ImportHistoryBookmarks">Laaw bhiettar </string>
+  <string name="ExportHistoryBookmarks">Pathaaw beyhrè </string>
+  <string name="ClearHistoryBookmarks">Safaa </string>
+  <string name="AddBookmarkTitle">Banaaw Pahietjaan </string>
+  <string name="BookmarkText">Naam de </string>
+  <string name="UrlText">Adres</string>
+  <string name="UrlHint">http://</string>
+  <string name="AddBookmarkLabelOrUrlEmpty">Ego naam aur url de, djaun chale hai. </string>
+  <string name="OpenInTab">Nawa kaagadj mè khòl. </string>
+  <string name="EditBookmark">Badal Pahietjaan </string>
+  <string name="CopyUrl">Dohoraaw url </string>
+  <string name="DeleteBookmark">Niekaar pahietjaan </string>
+  <string name="DeleteHistoryItem">Itihaas se niekaas </string>
+  <string name="PreferencesActivityTitle">Magadj </string>
+  <string name="PreferenceHeaderGeneralSettingsTitle">Sab magadj </string>
+  <string name="PreferenceGeneralHomepageTitle">Gharè </string>
+  <string name="PreferenceGeneralHomepageSummary">Nawa kagaadj banaaiye, tab eklaage ghare djaai paaiye, itiy. </string>
+  <string name="PreferenceHomePageDialogTitle">Gharè</string>
+  <string name="PreferenceGeneralSearchUrlTitle">Khòdj </string>
+  <string name="PreferenceGeneralSearchUrlSummary">Khòdj-sitewa oisne dhar ki sab khòdjwai url-veldwa mè se oekari. </string>
+  <string name="PreferenceCategoryStartPageTitle">Soeroewaat </string>
+  <string name="PreferenceGeneralStartPageLimitTitle">Taadaat djaune soeroewaat mè dekha hai. </string>
+  <string name="PreferenceGeneralStartPageLimitSummary">Kai chiedj soeroewaat mè dekhawe hai: </string>
+  <string name="PreferenceCategoryUITitle">Djaun rakam chiedj howè </string>
+  <string name="PreferenceBubblePositionTitle">Bubble ke djagaa </string>
+  <string name="PreferenceBubblePositionSummary">Bubbel ke djagaa, toolbar ke tarhe. </string>
+  <string name="PreferenceBubblePositionRight">Dahiena </string>
+  <string name="PreferenceBubblePositionLeft">Baawaa </string>
+  <string name="PreferenceBubblePositionBoth">Doenoe </string>
+  <string-array name="PreferenceBubblePositionEntries">
+    <item>@string/PreferenceBubblePositionRight</item>
+    <item>@string/PreferenceBubblePositionLeft</item>
+    <item>@string/PreferenceBubblePositionBoth</item>
+  </string-array>
+  <string-array name="PreferenceBubblePositionValues">
+    <item>DAHIENA </item>
+    <item>BAAWA </item>
+    <item>DOENOE </item>
+  </string-array>
+  <string name="PreferenceToolbarsAutoHideDurationTitle">Kai ghantaa dekhaai Toolbar </string>
+  <string name="PreferenceToolbarsAutoHideDurationSummary">Bòl kai ghantaa toolbar dekhaawe hai, seconde mè </string>
+  <string name="PreferenceSwitchTabsMethodTitle">Kaagadj badlaawe ke rakam</string>
+  <string name="PreferenceSwitchTabsMethodSummary">Kaise kaagadj badlaawe ke kare chaahin. </string>
+  <string name="PreferenceSwitchTabsMethodButtons">Batamiya </string>
+  <string name="PreferenceSwitchTabsMethodFling">Fling</string>
+  <string name="PreferenceSwitchTabsMethodBoth">Doenoe </string>
+  <string-array name="PreferenceSwitchTabsMethodEntries">
+    <item>@string/PreferenceSwitchTabsMethodButtons</item>
+    <item>@string/PreferenceSwitchTabsMethodFling</item>
+    <item>@string/PreferenceSwitchTabsMethodBoth</item>
+  </string-array>
+  <string-array name="PreferenceSwitchTabsMethodValues">
+    <item>BATTAM</item>
+    <item>FLING</item>
+    <item>DOENOE</item>
+  </string-array>
+  <string name="PreferenceHeaderBrowserSettingsTitle">Magadj ke ghoemakkar </string>
+  <string name="PreferenceEnableJavascriptTitle">Baar JavaScript </string>
+  <string name="PreferenceEnableJavascriptSummaryOn">Javascript chale hai. </string>
+  <string name="PreferenceEnableJavascriptSummaryOff">Javascript boetaan hai </string>
+  <string name="PreferenceEnableImagesTitle">Dekhaaw tasvier ke </string>
+  <string name="PreferenceEnableImagesSummary">Oe kar, djab maange laai tasvier </string>
+  <string name="PreferenceUseWideViewportTitle">Tjakla khierki </string>
+  <string name="PreferenceUseWideViewportSummary">Ehi dabaaw ke, desktop ke nier khierki paaiyye </string>
+  <string name="PreferenceLoadPagesWithOverviewTitle">Laaw kaagaadj djaune sab chiedj dekhaawe hai </string>
+  <string name="PreferenceLoadPagesWithOverviewSummary">Ehi tjoen djab maange ki sab kaagadj ke ek dafe mè dekh kar paaiye </string>
+  <string name="PreferencePluginsTitle">Baar plugin ke </string>
+  <string name="PreferencePluginsSummary">Tjoen kaise plugin chaahin chale ke </string>
+  <string name="PreferencePluginsAlwaysOff">Kabhi na </string>
+  <string name="PreferencePluginsOnDemand">Poecch-paaye</string>
+  <string name="PreferencePluginsAlwaysOn">Èkbhaaw </string>
+  <string-array name="PreferencePluginsEntries">
+    <item>@string/PreferencePluginsAlwaysOff</item>
+    <item>@string/PreferencePluginsOnDemand</item>
+    <item>@string/PreferencePluginsAlwaysOn</item>
+  </string-array>
+  <string-array name="PreferencePluginsValues">
+    <item>OFF</item>
+    <item>ON_DEMAND</item>
+    <item>ON</item>
+  </string-array>
+  <string name="PreferenceUserAgentTitle">User-agent</string>
+  <string name="PreferenceUserAgentSummary">User-agent djaune ghoemakkar oekare hai</string>
+  <string name="PreferenceUserAgentDialogTitle">User-agent</string>
+  <string name="PreferenceHeaderPrivacySettingsTitle">Djaidaad &amp; raccha ke magadj </string>
+  <string name="PreferencePrivacyClearCacheTitle">Djèbi khaali karo. </string>
+  <string name="PreferencePrivacyClearCacheSummary">Phènk djaun chiedj hiyaan battoral hai aur data basewan oepar se bhi. </string>
+  <string name="PreferenceCategoryHistoryTitle">Itihaas </string>
+  <string name="PreferencePrivacyHistorySizeTitle">Itihaas ki barka motha </string>
+  <string name="PreferencePrivacyHistorySizeSummary">Itihaas ke motha dekhaaw, dien mè </string>
+  <string name="PreferencePrivacyClearHistoryTitle">Niekaar itihaas </string>
+  <string name="PreferencePrivacyClearHistorySummary">Itihaas ke nisaan niekaar </string>
+  <string name="PreferenceCategoryCookiesTitle">Cookies</string>
+  <string name="PreferencePrivacyAcceptCookiesTitle">Cookies hiyaan laaw </string>
+  <string name="PreferencePrivacyAcceptCookiesSummary">Sitewan sab cookie dekh aur khaai karsake </string>
+  <string name="PreferencePrivacyClearCookiesTitle">Cookies niekaar </string>
+  <string name="PreferencePrivacyClearCookiesSummary">Sab ghoemakkar ke cookies niekaar </string>
+  <string name="PreferenceCategoryGeolocationTitle">Djagaa </string>
+  <string name="PreferencePrivacyEnableGeolocationTitle">Karan dew djagaa ke </string>
+  <string name="PreferencePrivacyEnableGeolocationSummary">Sab website djaan paai tu kahaan bate. </string>
+  <string name="PreferencePrivacyClearGeolocationTitle">Sitewan na djaan paai ki tu bate kahaan </string>
+  <string name="PreferencePrivacyClearGeolocationSummary">Koi na djaan pai tu kahaan bate </string>
+  <string name="PreferenceCategoryFormDataTitle">Sab dyaan djaune formulier pe likhaal hai </string>
+  <string name="PreferencePrivacyRememberFormDataTitle">Yaad kar sab dyaan djaun formulier mè rakhal hai </string>
+  <string name="PreferencePrivacyRememberFormDataSummary">Yaad kar djaun dyaan formulier mè rakhal hai, baad mè khatien. </string>
+  <string name="PreferencePrivacyClearFormDataTitle">Niekaar djaune formulier mè liekhal hai </string>
+  <string name="PreferencePrivacyClearFormDataSummary">Sab formulier ke safaa kar </string>
+  <string name="PreferenceCategoryPasswordsTitle">Tjoeppe-tjaabie </string>
+  <string name="PreferencePrivacyRememberPasswordsTitle">Tjoeppe-tjaabie yaad kar </string>
+  <string name="PreferencePrivacyRememberPasswordsSummary">Sab naam aur tjoeppe-tjaabie yaad kar </string>
+  <string name="PreferencePrivacyClearPasswordsTitle">Sab tjoeppe-tjaabie niekaar </string>
+  <string name="PreferencePrivacyClearPasswordsSummary">Sab tjoeppe-tjaabie ke niekaar </string>
+  <string name="PreferencePrivacyWebsitesSettingsTitle">Websites ke magadj </string>
+  <string name="PreferencePrivacyWebsitesSettingsSummary">Kara magadj éke site khatien </string>
+  <string name="PreferencePrivacyIncognitoTitle">Tjoeppe se kar </string>
+  <string name="PreferencePrivacyIncognitoDefaultTitle">Khalie tjoep-tjaap djaaw </string>
+  <string name="PreferencePrivacyIncognitoDefaultSummary">Nawa kagaadj tjoeppe se khòl </string>
+  <string name="HistoryToday">Aadj </string>
+  <string name="HistoryYesterday">Kalyan </string>
+  <string name="HistoryLastSevenDays">Aakhrie 7 ròdj </string>
+  <string name="HistoryLastMonth">Akhrie mahiena</string>
+  <string name="HistoryOlder">Aur poeraana </string>
+  <string name="ClearCacheMessage">Sab battoral data niekaar </string>
+  <string name="ClearHistoryMessage">Niekaar sab ghoemakkar ke nisaan </string>
+  <string name="ClearCookiesMessage">Hathaar sab cookie ke? </string>
+  <string name="ClearGeolocationMessage">Sitewan na djaan paai kahaan rehiye </string>
+  <string name="ClearFormDataMessage">Sab kaagadj ke data niekaasiye? </string>
+  <string name="ClearPasswordsMessage">Sab battoral tjaabi niekaasiye? </string>
+  <string name="PreferenceHomepageStart">Soeroe kaagadj</string>
+  <string name="PreferenceHomepageBlank">Safaa kaagadj </string>
+  <string name="PreferenceHomepageCustom">Djaun maange kagaadj </string>
+  <string-array name="HomepageTitles">
+    <item>@string/PreferenceHomepageStart</item>
+    <item>@string/PreferenceHomepageBlank</item>
+    <item>@string/PreferenceHomepageCustom</item>
+  </string-array>
+  <string name="PreferenceUserAgentAndroid">Android</string>
+  <string name="PreferenceUserAgentDesktop">Tafra pe </string>
+  <string name="PreferenceUserAgentOther">Doesar </string>
+  <string-array name="UserAgentsTitles">
+    <item>@string/PreferenceUserAgentAndroid</item>
+    <item>@string/PreferenceUserAgentDesktop</item>
+    <item>@string/PreferenceUserAgentOther</item>
+  </string-array>
+  <string name="SearchUrlGoogle">http://www.google.nl/m?q={searchTerms} / http://www.google.com/m?q={searchTerms}</string>
+  <string name="PreferenceHeaderAddonsTitle">Addons</string>
+  <string name="PreferenceHeaderAboutTitle">Ehi baarèn </string>
+  <string name="HttpAuthenticationDialogDialogTitle">Dja èmma %1$s - %2$s</string>
+  <string name="HttpAuthenticationDialogUserName">Naamwè </string>
+  <string name="HttpAuthenticationDialogPassword">Tjaabie </string>
+  <string name="FormResubmitTitle">Fien pathaaw kagaadj </string>
+  <string name="FormResubmitMessage">Data fien se oekar bhail (\"POSTDATA\"). Jab tu fien pathaaiye data, to sab kuch ohi djon karle ohi kaagadjwa leke fien hoi (jab kienle kuchoe, fien kieniega, jab khojle kuchoe, fien khodjiega itiy.). </string>
+  <string name="BookmarkAdded">Pahietjaan banaalees </string>
+  <string name="BookmarkRemoved">Pahietjaan se niekaasies </string>
+  <string name="SDCardErrorNoSDMsg">SD kartta na mile hai</string>
+  <string name="SDCardErrorSDUnavailable">SD kartta na paawe hai </string>
+  <string name="HistoryBookmarksClearTitle">Safaa </string>
+  <string-array name="ClearHistoryBookmarksChoice">
+    <item>@string/History</item>
+    <item>@string/Bookmarks</item>
+    <item>@string/All</item>
+  </string-array>
+  <string name="HistoryBookmarksImportSourceTitle">File (Toekka) bhiettar laaw </string>
+  <string name="HistoryBookmarksImportFileUnavailable">Saarele, toekka ke pataa na hai.</string>
+  <string name="HistoryBookmarksImportTitle">Itihaas &amp; pahietjaan bhitar laaw </string>
+  <string name="HistoryBookmarksImportInitialMessage">Bhiettar laawe itihaas &amp; pahietjaan ke </string>
+  <string name="HistoryBookmarksImportReadingFile">Pare hai toekka… </string>
+  <string name="HistoryBookmarksImportParsingFile">Toekka ke byakaran oekare hai… </string>
+  <string name="HistoryBookmarksImportProgressMessage">%1$s ke %2$s chiedj parhe </string>
+  <string name="HistoryBookmarksImportInsertMessage">Value daare hai òmma  </string>
+  <string name="HistoryBookmarksImportErrorTitle">Na laai paais </string>
+  <string name="HistoryBookmarksImportErrorMessage">Na bhitar lai paas itihaas &amp; pahietjaan ke: %s</string>
+  <string name="HistoryBookmarksExportTitle">Itihaas &amp; pahietjaan beyhrè oekar</string>
+  <string name="HistoryBookmarksExportInitialMessage">Itihaas &amp; pahietjaan beyhre oekare hai… </string>
+  <string name="HistoryBookmarksExportCheckCardMessage">Beyhre ke bakhaar dekhe hai </string>
+  <string name="HistoryBookmarksExportProgressMessage">%1$s ke %2$s beyhrè oekare hai </string>
+  <string name="HistoryBookmarksExportErrorTitle">Na beyhre oekar paais </string>
+  <string name="HistoryBookmarksExportErrorMessage">Na beyhre pathaai paais, itihaas &amp; pahietjaan: %s </string>
+  <string name="GeolocationTitle">Djagaa poecche hai </string>
+  <string name="GeolocationMessage">Site %s aapan djagaa maange djaane </string>
+  <string name="GeolocationAccept">Hoekom de </string>
+  <string name="GeolocationDecline">Niehaar </string>
+  <string name="WebsitesSettingsEmpty">Site ke khatien magadj na hai </string>
+  <string name="WebsitesSettingsSiteTitle">Magadj %s khatien </string>
+  <string name="WebsitesSettingsDataUsage">%s MB rakkhal </string>
+  <string name="WebsitesSettingsDataClickToClear">Sab data ke nikaar </string>
+  <string name="WebsitesSettingsCleatDataDialogTitle">Sab data phènk </string>
+  <string name="WebsitesSettingsCleatDataDialogMessage">Niekaar sab data djaun ehi site ke hai </string>
+  <string name="WebsitesSettingsGeolocationClickToClear">Dabaaw to djagaa na djaan paai </string>
+  <string name="WebsitesSettingsGeolocationAllowed">Ehi site, aapan djagaa pe aai sake </string>
+  <string name="WebsitesSettingsGeolocationNotAllowed">Ehi site, aapan djagaa pe na aai sake </string>
+  <string name="WebsitesSettingsGeolocationPageDialogTitle">Site, djagaa na djaan paai </string>
+  <string name="WebsitesSettingsGeolocationPageDialogMessage">Ehi site djagaa na djaan paai </string>
+  <string name="AddonsWarningText">Khali add-ons dhariye djaune pe bharosa ba. Kuch werie lagi to sab add-on nikaariye. </string>
+  <string name="AddonsGetAddons">
+    <a href="">Lètiyaw Addons </a>
+  </string>
+  <string name="AddonsMarketNotFoundTitle">Android Market na mile hai </string>
+  <string name="AddonsMarketNotFoundMessage">Djanaa hai ki tor cell pe, Android Market application na dharral hai. </string>
+  <string name="AddonsEnableAll">Baar sab </string>
+  <string name="AddonsDisableAll">Boetade sab </string>
+  <string name="AddonDetailsContact">Kontakt: %s </string>
+  <string name="AddonDetailsUsedCallbacksTitle">Ehi addon: </string>
+  <string name="AddonCallbackPageStarted">Djaani djab ghoemakkar pakre hai kagaadj </string>
+  <string name="AddonCallbackPageFinished">Djaani djab kaagadj pakraan hai </string>
+  <string name="AddonCallbackTabOpened">Djaani djab kagaadj khoelge hai </string>
+  <string name="AddonCallbackTabClosed">Djaani djab kagaadj bandh bhail</string>
+  <string name="AddonCallbackTabSwitched">Djaani djab kagaadj badal bhail </string>
+  <string name="AddonCallbackHasPreferencesPage">Ba ègo magadj ke kaagadj </string>
+  <string name="AddonCallbackContributeMainMenu">Barka menu mè kuchoe laai karsake </string>
+  <string name="AddonCallbackContributeLinkContextMenu">Context menu mè kuchoe laai karsake </string>
+  <string name="AddonCallbackContributeHistoryBookmarksMenu">Pahietjaan aur itihaas ke menu pe kuchoe dhar karsake </string>
+  <string name="AddonCallbackContributeBookmarkContextMenu">Pahietjaan ke context menu pe kuchoe dè paai </string>
+  <string name="AddonCallbackContributeHistoryContextMenu">Itihaas ke context menu pe kuchoe dè paai </string>
+  <string name="AddonDetailsUsedPermissionsTitle">Ehi rakam ke iedjaadjat hai: </string>
+  <string name="AddonDetailsPermissionsNone">Kuchoe na </string>
+  <string name="AddonDetailsUnableToGetPermissions">Na kar paawe hai iedjaadjat. Cellwa ke application manager mè dekhiaaw. </string>
+  <string name="ContentDescriptionDivider">chiedj baate </string>
+  <string name="ContentDescriptionApplicationIcon">App ke autaar </string>
+  <string name="ContentDescriptionSuggestionIcon">Favicon idee de </string>
+  <string name="ContentDescriptionBookmarkThumbnail">Thumbnail se pahietjaan banaaw </string>
+  <string name="ContentDescriptionFavicon">Site ke Favicon </string>
+  <string name="ContentDescriptionGoStopReloadButton">Djaa / Rokh / Fien-se battam </string>
+  <string name="ContentDescriptionMenuButton">Menu battam / Menu button</string>
+  <string name="ContentDescriptionPreviousTabButton">Pehle-rehle kaagadj battam </string>
+  <string name="ContentDescriptionNextTabButton">Aage ke kaagadj battam </string>
+  <string name="ContentDescriptionLeftBubble">Baawa bubbel </string>
+  <string name="ContentDescriptionRightBubble">Dahiena bubbel </string>
+  <string name="ContentDescriptionBackButton">Lautiaa battam </string>
+  <string name="ContentDescriptionCloseTabButton">Boetaaw kaagadj battam </string>
+  <string name="ContentDescriptionBookmarksButton">Pahietjaan ke battam </string>
+  <string name="ContentDescriptionNewTabButton">Naawa kaagadj battam </string>
+  <string name="ContentDescriptionForwardButton">Aage battam </string>
+  <string name="ContentDescriptionHomeButton">Ghare battam </string>
+  <string name="ContentDescriptionWebsiteSettingsLocation">Sitewa ka djaaga </string>
+  <string name="ContentDescriptionWebsiteSettingsUsage">Kaise site oekare hai </string>
+  <string name="ContentDescriptionWebsiteSettingsFeature">Site ke goen </string>
+  <string-array name="DefaultBookmarksTitles">
+    <item>Google Su</item>
+    <item>Wikipedia</item>
+    <item>YouTube</item>
+    <item>DB Suriname</item>
+    <item>Facebook</item>
+    <item>Nu.nl</item>
+  </string-array>
+  <string-array name="DefaultBookmarksUrls">
+    <item>http://www.google.sr/</item>
+    <item>http://en.wikipedia.org/</item>
+    <item>http://www.youtube.com/</item>
+    <item>http://www.dbsuriname.com</item>
+    <item>http://www.facebook.com</item>
+    <item>http://www.nu.nl/</item>
+  </string-array>
+  <!-- 1.2 -->
+  <string name="IncognitoTab">Tjoep-tjaap kaagadj </string>
+  <string name="ContextMenuOpenInBackground">Khòl paatjhe mè </string>
+  <string name="ContentDescriptionPrivateBrowsingIndicator">Tjoep-tjaap fasi dekhaawe hai </string>
+  <!-- 1.3 -->
+  <string name="Folder">Baskieta </string>
+  <string name="NewFolder">Nawa Baskieta </string>
+  <string name="NewFolderHint">Baskieta ke naam </string>
+  <string name="ProvideNewFolderName">Baskieta ke naam de, ki kouno naam tjoen </string>
+  <string name="DeleteFolder">Baskieta oetaar </string>
+  <string name="ConfirmDeleteFolderMessage">Ehi baskieta ke nikaariye? </string>
+  <string name="DeleteFolderTitle">Nikaase hai baskieta </string>
+  <string name="DeleteFolderMessage">Agoorle tani se djable baskieta na niekral hai </string>
+  <string name="ContentDescriptionBookmarksFoldersBack">Pahietjaan ke baskieta mè lautiaaw </string>
+  <!-- 1.4 -->
+  <string name="PreferenceHeaderAccessibilityTitle">Aawe-djaawe ke magadj </string>
+  <string name="PreferenceCategoryTextSizeTitle">Lipie barka motha </string>
+  <string name="PreferenceAccessibilityTextSizePreviewTitle">Lipie ke taakh </string>
+  <string name="PreferenceAccessibilityTextScalingTitle">Lipie barka kar </string>
+  <string name="PreferenceAccessibilityMinimumFontSizeTitle">Sab se chòtta lipie </string>
+  <string name="PreferenceAccessibilityMinimumFontSizeSummary">Sab se chòtta lipie djaune ghoemakkar oekar karsake </string>
+  <string name="FontPreviewTextTiny">Ie kaise </string>
+  <string name="FontPreviewTextSmall">Chòtta </string>
+  <string name="FontPreviewTextNormal">Normaal </string>
+  <string name="FontPreviewTextLarge">Barka</string>
+  <string name="FontPreviewTextHuge">Jabbar</string>
+  <string-array name="FontPreviewText">
+    <item>@string/FontPreviewTextTiny</item>
+    <item>@string/FontPreviewTextSmall</item>
+    <item>@string/FontPreviewTextNormal</item>
+    <item>@string/FontPreviewTextLarge</item>
+    <item>@string/FontPreviewTextHuge</item>
+  </string-array>
+  <string name="PreferenceCategoryInvertedScreenRenderingTitle">Oelta-siedha dekhaaw </string>
+  <string name="PreferenceAccessibilityInvertedRenderingTitle">Oelta-siedha dekhaaw / Inverted rendering</string>
+  <string name="PreferenceAccessibilityInvertedRenderingSummary">Sab rang oelta-siedha kar. Ehi said, sab cellwan pe na tjali </string>
+  <string name="PreferenceAccessibilityInvertedRenderingContrastTitle">Thanda/Garam </string>
+  <string name="ContentDescriptionAutocompleteQueryBuilder">Kuch url bar mè liekh, baki na djaai èklaage </string>
+  <!-- 1.5 -->
+  <string name="UnknownAutority">Kani-ka kè ba </string>
+  <string name="RememberMyChoice">Djaun tjoenlie, yaad kar</string>
+  <string name="SslExceptionAccessAllowedByUserToast">SSL raccha: User bole %s ki oekar paawe hai </string>
+  <string name="SslExceptionAccessDisallowedByUserToast">SSL raccha: Mienaahie ba %s khatien </string>
+  <string name="PreferenceSslExceptionsTitle">SSL raccha se doro ghoesre hai </string>
+  <string name="PreferenceSslExceptionsSummary">Sab SSL raccha sitewan khatien </string>
+  <string name="SslExceptionWebsitesText">
+    <i>Èpar dabaaw aur doro SSL ke hathaaw / Click to remove the exception.</i>
+  </string>
+  <string name="SslExceptionEmptyText">Kuch na SSL se doro kar djaahe </string>
+  <string name="RemoveSslExceptionTitle">SSL se doro na djaai paai </string>
+  <string name="RemoveSslExceptionMessage">SSL se doro na djaai paai  </string>
+  <string name="SslInvalid">Ehi kaagadj na moi ba </string>
+  <string name="SslDateInvalid">Ehi kaagadj ke tèm na moi ba </string>
+  <string name="Authorized">Hoekoem dees </string>
+  <string name="Reasons">Ehi bole se </string>
+  <string name="SearchUrlDialogText1">Khodje ke site ab ehi ba: </string>
+  <string name="SearchUrlDialogText2">Ègo khòdje ke site tjoenaaw </string>
+  <string name="SearchUrlGetOnline">
+    <a href="">Apne se badlaaw ehi khodje ke site </a>
+  </string>
+  <string name="SearchUrlConnecting">Djhore hai </string>
+  <string name="SearchUrlParsing">Byakaran oekare hai </string>
+  <string name="SearchUrlBadResponseCodeMessage">Khodje ke site pe na aai paawe hai (Ehi code %s dewe hai) </string>
+  <string name="SearchUrlDefault">Doeniya-bhar Googlekar </string>
+  <string name="SearchUrlCustom">Doesar khodje ke site </string>
+  <string name="SortBookmarks">Pahietjaan andjaaj kar </string>
+  <string name="MostUsedSortMode">Dheer oekarle </string>
+  <string name="AlphaSortMode">Alphabet pe </string>
+  <string name="RecentSortMode">Abbe dekhiaaile </string>
+  <!-- 1.6 -->
+  <string name="HistoryBookmarksImportErrorInvalidFileFormat">Ehi file toetal hai </string>
+  <string name="HistoryBookmarksImportFoldersProgressMessage">Baskieta %1$s ke %2$s pare hai </string>
+  <string name="HistoryBookmarksImportFoldersLinkMessage">Baskieta djhore hai…</string>
+  <string name="HistoryBookmarksImportBookmarksProgressMessage">Pahietjaan %1$s ke %2$s pare hai. </string>
+  <string name="HistoryBookmarksImportHistoryProgressMessage">Itihaas %1$s ke %2$s pare hai </string>
+  <string name="FullScreen">Khirki bhar </string>
+  <string name="ContentDescriptionExitFullScreen">Khirki bhar fasi boetaaw </string>
+  <!-- 1.7 -->
+  <string name="StartPageLabel">Soeroewaat / Start page</string>
+  <string name="RestartDialogTitle">Fien soeroe chaahin  kare ke. </string>
+  <string name="RestartDialogMessage">Djaun maange badle na badalpaaiye, app fien soeroe howe se pehle. Fien soeroe kar ie sait? </string>
+  <string name="ContentDescriptionTabPreview">Djhaak kaagadj ke</string>
+  <string name="PreferenceClosePanelOnNewTabTitle">Nawa kaagadj ke paneel djaun bagal mè hai bandh kar </string>
+  <string name="PreferenceClosePanelOnNewTabSummary">Dabaaiye djable maange hai ki bagal ke paneel apne se ròkhi </string>
+  <string name="AboutChangelogTitle">Badal bhailè chiedjwan</string>
+  <string name="AboutContributorsTitle">Djaun madad karlèn </string>
+  <string name="AboutLicensesTitle">Doesar rakam ke hoekoem </string>
+  <string name="RestoreTabsDialogTitle">Fien oe kar tabs / Tabs restoration</string>
+  <string name="RestoreTabsDialogMessage">Abhaine karen se kaagadj niekaariye? </string>
+  <string name="PreferenceRestoreTabsTitle">Fien oekar ohi kaagadjwan </string>
+  <string name="PreferenceRestoreTabsSummary">Bòl kaise kaagad, djaun aakhrie dafe oekarle, fien khoeliega.</string>
+  <string name="PreferenceRestoreTabsAsk">Poecch</string>
+  <string name="PreferenceRestoreTabsAlways">Har dam </string>
+  <string name="PreferenceRestoreTabsNever">Kabhi na </string>
+  <string-array name="PreferenceRestoreTabsEntries">
+    <item>@string/PreferenceRestoreTabsAsk</item>
+    <item>@string/PreferenceRestoreTabsAlways</item>
+    <item>@string/PreferenceRestoreTabsNever</item>
+  </string-array>
+  <string-array name="PreferenceRestoreTabsValues">
+    <item>ASK</item>
+    <item>ALWAYS</item>
+    <item>NEVER</item>
+  </string-array>
+  <string name="PreferenceUITypeTitle">UI ke rakam </string>
+  <string name="PreferenceUITypeSummary">User interface ke rakam tjoen </string>
+  <string name="PreferenceUITypeAuto">Apne se chali</string>
+  <string name="PreferenceUITypePhone">Cellwa </string>
+  <string name="PreferenceUITypeLegacyPhone">Cell (poerankwa) </string>
+  <string name="PreferenceUITypeTablet">Tablet</string>
+  <string-array name="PreferenceUITypeEntries">
+    <item>@string/PreferenceUITypeAuto</item>
+    <item>@string/PreferenceUITypePhone</item>
+    <item>@string/PreferenceUITypeLegacyPhone</item>
+    <item>@string/PreferenceUITypeTablet</item>
+  </string-array>
+  <string-array name="PreferenceUITypeValues">
+    <item>AUTO</item>
+    <item>PHONE</item>
+    <item>LEGACY_PHONE</item>
+    <item>TABLET</item>
+  </string-array>
+  <!-- 1.8 -->
+  <string name="PreferenceDevelopersTitle">Djaun banaile </string>
+  <string name="PreferenceJsLogOnLocatTitle">JS logs logcat se liekhiye </string>
+  <string name="PreferenceJsLogOnLocatSummary">JS logs, logcat lotha mè paathaaw </string>
+  <string name="ContextMenuViewImageInNewTab">Tasvier nawa kaagadj pe dekhaaw </string>
 </resources>
