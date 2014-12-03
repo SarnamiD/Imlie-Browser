@@ -27,39 +27,14 @@
 </head>
 <body>
 	<ul class="header">
-		<li>Dorian 'gravgun' Wouters
+		<li>SarnamiD
 			<ul class="details">
-				<li>Features &amp; fixes.</li>
+				<li>Language and Branding</li>
 			</ul>
 		</li>
-		<li>Rui
+		<li>ds-hwang 'Luxtella'
 			<ul class="details">
-				<li>Portuguese translation.</li>
-			</ul>
-		</li>
-		<li>Lars-Dominik
-			<ul class="details">
-				<li>German translation.</li>
-			</ul>
-		</li>
-		<li>Anton
-			<ul class="details">
-				<li>Russian translation.</li>
-			</ul>
-		</li>
-		<li>Xphnx
-			<ul class="details">
-				<li>Spanish translation.</li>
-			</ul>
-		</li>
-		<li>Pikatenor
-			<ul class="details">
-				<li>Japanese translation.</li>
-			</ul>
-		</li>
-		<li>JingYunLiu
-			<ul class="details">
-				<li>Simplified Chinese translation.</li>
+				<li>Compiling and App icon design</li>
 			</ul>
 		</li>
 	</ul>
