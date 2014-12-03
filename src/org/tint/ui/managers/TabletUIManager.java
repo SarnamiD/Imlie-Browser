@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -23,7 +23,7 @@ import java.util.UUID;
 
 import org.tint.R;
 import org.tint.controllers.Controller;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.components.CustomWebView;
 import org.tint.ui.fragments.BaseWebViewFragment;
 import org.tint.ui.fragments.StartPageFragment;
@@ -56,7 +56,7 @@ public class TabletUIManager extends BaseUIManager {
 	private ProgressBar mProgressBar;
 	private ImageView mExitFullScreen;
 	
-	public TabletUIManager(TintBrowserActivity activity) {
+	public TabletUIManager(ImlieActivity activity) {
 		super(activity);
 		
 		mTabs = new Hashtable<Tab, TabletWebViewFragment>();

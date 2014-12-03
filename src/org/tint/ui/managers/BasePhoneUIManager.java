@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -24,7 +24,7 @@ import java.util.UUID;
 
 import org.tint.R;
 import org.tint.controllers.Controller;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.components.CustomWebView;
 import org.tint.ui.fragments.BaseWebViewFragment;
 import org.tint.ui.fragments.PhoneWebViewFragment;
@@ -66,7 +66,7 @@ public abstract class BasePhoneUIManager extends BaseUIManager {
 	
 	protected ActionMode mActionMode;
 	
-	public BasePhoneUIManager(TintBrowserActivity activity) {
+	public BasePhoneUIManager(ImlieActivity activity) {
 		super(activity);
 		
 		mFragmentsList = new ArrayList<PhoneWebViewFragment>();

@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -27,7 +27,7 @@ import org.tint.R;
 import org.tint.addons.AddonMenuItem;
 import org.tint.controllers.Controller;
 import org.tint.model.DownloadItem;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.dialogs.DownloadConfirmDialog;
 import org.tint.ui.fragments.BaseWebViewFragment;
 import org.tint.ui.managers.UIManager;
@@ -267,7 +267,7 @@ public class CustomWebView extends WebView implements DownloadListener, Download
 	}
 	
 	private Intent createIntent(String action, int actionId, int hitTestResult, String url) {
-		Intent result = new Intent(getContext(), TintBrowserActivity.class);
+		Intent result = new Intent(getContext(), ImlieActivity.class);
 		result.setAction(action);
 		result.putExtra(Constants.EXTRA_ACTION_ID, actionId);
 		result.putExtra(Constants.EXTRA_HIT_TEST_RESULT, hitTestResult);
@@ -302,23 +302,23 @@ public class CustomWebView extends WebView implements DownloadListener, Download
 						(resultType == HitTestResult.SRC_ANCHOR_TYPE) ||
 						(resultType == HitTestResult.SRC_IMAGE_ANCHOR_TYPE)) {
 					
-					MenuItem item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_OPEN, 0, R.string.ContextMenuOpen);
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_OPEN, resultType, result.getExtra()));
+					MenuItem item = menu.add(0, ImlieActivity.CONTEXT_MENU_OPEN, 0, R.string.ContextMenuOpen);
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_OPEN, resultType, result.getExtra()));
 	
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, 0, R.string.ContextMenuOpenNewTab);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, 0, R.string.ContextMenuOpenNewTab);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND, 0, R.string.ContextMenuOpenInBackground);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND, 0, R.string.ContextMenuOpenInBackground);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_COPY, 0, R.string.ContextMenuCopyLinkUrl);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_COPY, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_COPY, 0, R.string.ContextMenuCopyLinkUrl);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_COPY, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_DOWNLOAD, 0, R.string.ContextMenuDownload);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_DOWNLOAD, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_DOWNLOAD, 0, R.string.ContextMenuDownload);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_DOWNLOAD, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_SHARE, 0, R.string.ContextMenuShareLinkUrl);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_SHARE, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_SHARE, 0, R.string.ContextMenuShareLinkUrl);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_SHARE, resultType, result.getExtra()));
 				
 					createContributedContextMenu(menu, resultType, result.getExtra());
 					
@@ -326,20 +326,20 @@ public class CustomWebView extends WebView implements DownloadListener, Download
 					
 				} else if (resultType == HitTestResult.IMAGE_TYPE) {
 					
-					MenuItem item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_OPEN, 0, R.string.ContextMenuViewImage);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_OPEN, resultType, result.getExtra()));
+					MenuItem item = menu.add(0, ImlieActivity.CONTEXT_MENU_OPEN, 0, R.string.ContextMenuViewImage);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_OPEN, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, 0, R.string.ContextMenuViewImageInNewTab);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, 0, R.string.ContextMenuViewImageInNewTab);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_COPY, 0, R.string.ContextMenuCopyImageUrl);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_COPY, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_COPY, 0, R.string.ContextMenuCopyImageUrl);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_COPY, resultType, result.getExtra()));
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_DOWNLOAD, 0, R.string.ContextMenuDownloadImage);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_DOWNLOAD, resultType, result.getExtra()));	
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_DOWNLOAD, 0, R.string.ContextMenuDownloadImage);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_DOWNLOAD, resultType, result.getExtra()));	
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_SHARE, 0, R.string.ContextMenuShareImageUrl);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_SHARE, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_SHARE, 0, R.string.ContextMenuShareImageUrl);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_SHARE, resultType, result.getExtra()));
 					
 					createContributedContextMenu(menu, resultType, result.getExtra());
 					
@@ -349,14 +349,14 @@ public class CustomWebView extends WebView implements DownloadListener, Download
 					
 					Intent sendMail = new Intent(Intent.ACTION_VIEW, Uri.parse(WebView.SCHEME_MAILTO + result.getExtra()));
 					
-					MenuItem item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_SEND_MAIL, 0, R.string.ContextMenuSendEmail);					
+					MenuItem item = menu.add(0, ImlieActivity.CONTEXT_MENU_SEND_MAIL, 0, R.string.ContextMenuSendEmail);					
 					item.setIntent(sendMail);
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_COPY, 0, R.string.ContextMenuCopyEmailUrl);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_COPY, resultType, result.getExtra()));		
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_COPY, 0, R.string.ContextMenuCopyEmailUrl);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_COPY, resultType, result.getExtra()));		
 					
-					item = menu.add(0, TintBrowserActivity.CONTEXT_MENU_SHARE, 0, R.string.ContextMenuShareEmailUrl);					
-					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, TintBrowserActivity.CONTEXT_MENU_SHARE, resultType, result.getExtra()));
+					item = menu.add(0, ImlieActivity.CONTEXT_MENU_SHARE, 0, R.string.ContextMenuShareEmailUrl);					
+					item.setIntent(createIntent(Constants.ACTION_BROWSER_CONTEXT_MENU, ImlieActivity.CONTEXT_MENU_SHARE, resultType, result.getExtra()));
 					
 					createContributedContextMenu(menu, resultType, result.getExtra());
 					

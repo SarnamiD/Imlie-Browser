@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -16,7 +16,7 @@
 package org.tint.ui.managers;
 
 import org.tint.R;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.components.BadgedImageView;
 import org.tint.ui.components.CustomWebView;
 import org.tint.ui.fragments.BaseWebViewFragment;
@@ -70,7 +70,7 @@ public class PhoneUIManager extends BasePhoneUIManager {
 		sAnimationType = AnimationType.NONE;
 	}
 	
-	public PhoneUIManager(TintBrowserActivity activity) {
+	public PhoneUIManager(ImlieActivity activity) {
 		super(activity);		
 		
 		mPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
@@ -438,7 +438,7 @@ public class PhoneUIManager extends BasePhoneUIManager {
 	
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-		if ((requestCode == TintBrowserActivity.ACTIVITY_BOOKMARKS) &&
+		if ((requestCode == ImlieActivity.ACTIVITY_BOOKMARKS) &&
 				(resultCode == Activity.RESULT_OK)) {
 			if (mPanel.isPanelShown()) {
 				mPanel.hidePanel();

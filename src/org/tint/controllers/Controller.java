@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -20,7 +20,7 @@ import java.util.List;
 
 import org.tint.addons.AddonManager;
 import org.tint.model.DownloadItem;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.managers.UIManager;
 
 public class Controller { 
@@ -52,13 +52,13 @@ public class Controller {
 	}
 	
 	private UIManager mUIManager;
-	private TintBrowserActivity mMainActivity;
+	private ImlieActivity mMainActivity;
 	
 	private List<DownloadItem> mDownloads;
 	
 	private AddonManager mAddonManager;
 	
-	public void init(UIManager uiManager, TintBrowserActivity activity) {
+	public void init(UIManager uiManager, ImlieActivity activity) {
 		mUIManager = uiManager;
 		mMainActivity = activity;
 		mAddonManager = new AddonManager(mMainActivity, mUIManager);
@@ -68,7 +68,7 @@ public class Controller {
 		return mUIManager;
 	}
 	
-	public TintBrowserActivity getMainActivity() {
+	public ImlieActivity getMainActivity() {
 		return mMainActivity;
 	}
 
