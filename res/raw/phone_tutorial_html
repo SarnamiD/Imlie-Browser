@@ -27,19 +27,19 @@
 	</style>
 </head>
 <body>
-	<h3 class="center">Welcome to Imlie</h3>
+	<h3 class="center">Imlie Browser - Kaise kamaahai chiedjwa?</h3>
 	<ul>
-	<li>Touch the top-left icon to open the side panel, wich give access to the list of opened tabs.</li>
+	<li>Labaarwa kòna pe dabaaiye tab khòlie, ego kantie djaun sab kaagadj dekhaai, djaahan pehle pe gaile.</li>
 	</ul>
 	<img src="button.png" />
 	<ul>
-	<li>Alternatively, you can open the side panel by dragging the left edge of the browser.</li>
+	<li>Labaarwa kanti ghiedje ke bhi, ohi kaagadjwan oekardewè hai.</li>
 	</ul>
 	<img src="slide_panel.png" />
 	<ul>
-	<li>Close a tab by clicking on its close icon, or swipe it left or right.</li>
+	<li>Ego ki doenoe kanti ke swypen kariye; tab bandh hoi kagaadj. </li>
 	</ul>
 	<img src="close_tab.png" />
-	<p class="details">If you miss the previous user interface for phones, you can still enable it through preferences.</p>
+	
 </body>
 </html>
