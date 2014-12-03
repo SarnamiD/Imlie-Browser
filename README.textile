@@ -2,7 +2,7 @@ h2. Imlie - Tu poedj, ham bataab (Q&A, P&B)
 
 This project is licensed under the "GPL v3":http://www.gnu.org/licenses/gpl-3.0.en.html license.
 
-To build it, it is needed to clone the "Imlie Addon Framework Library":https://github.com/Anasthase/ImlieAddonFrameworkLibrary project.
+To build on this, you need to clone the "TintBrowser Addon Framework Library":https://github.com/Anasthase/ImlieAddonFrameworkLibrary project.
 
 h1. 1. What this is / Kountji hai ie?
 
