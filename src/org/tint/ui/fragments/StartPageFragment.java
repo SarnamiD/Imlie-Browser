@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -20,7 +20,7 @@ import org.tint.model.BookmarkHistoryItem;
 import org.tint.model.BookmarksAdapter;
 import org.tint.providers.BookmarksProvider;
 import org.tint.providers.BookmarksWrapper;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.managers.UIManager;
 import org.tint.utils.Constants;
 
@@ -72,7 +72,7 @@ public abstract class StartPageFragment extends Fragment implements LoaderManage
 		
 		if (!mInitialized) {
 			try {
-				mUIManager = ((TintBrowserActivity) activity).getUIManager();
+				mUIManager = ((ImlieActivity) activity).getUIManager();
 			} catch (ClassCastException e) {
 				Log.e("StartPageFragment.onAttach()", e.getMessage());
 			}

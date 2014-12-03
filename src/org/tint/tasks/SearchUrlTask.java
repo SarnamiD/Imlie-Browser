@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -80,7 +80,7 @@ public class SearchUrlTask extends AsyncTask<Void, Integer, String> {
 		HttpURLConnection c = null;		
 		
 		try {
-			URL url = new URL("http://anasthase.github.com/TintBrowser/search-engines.json");
+			URL url = new URL("http://anasthase.github.com/Imlie/search-engines.json");
 			c = (HttpURLConnection) url.openConnection();
 			
 			c.connect();

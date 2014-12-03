@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -16,7 +16,7 @@
 package org.tint.ui.managers;
 
 import org.tint.R;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.components.CustomWebView;
 import org.tint.ui.fragments.BaseWebViewFragment;
 import org.tint.ui.fragments.LegacyPhoneStartPageFragment;
@@ -92,7 +92,7 @@ public class LegacyPhoneUIManager extends BasePhoneUIManager {
 		sAnimationType = AnimationType.FADE;
 	}
 	
-	public LegacyPhoneUIManager(TintBrowserActivity activity) {
+	public LegacyPhoneUIManager(ImlieActivity activity) {
 		super(activity);
 		
 		updateSwitchTabsMethod();

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-   Tint Browser for Android
+   Imlie for Android
   
-   Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
+   Copyright (C) 2012, 2014 - to infinity and beyond J. Devauchelle, SarnamiD, ds-hwang and contributors.
  
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
@@ -19,7 +19,7 @@
     package="org.tint"
     android:installLocation="auto"
     android:versionCode="10"
-    android:versionName="1.8">
+    android:versionName="1.2">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
     
@@ -55,7 +55,7 @@
 
         <activity
             android:label="@string/ApplicationName"
-            android:name=".ui.activities.TintBrowserActivity"
+            android:name=".ui.activities.ImlieActivity"
             android:launchMode="singleTask"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
             <intent-filter >

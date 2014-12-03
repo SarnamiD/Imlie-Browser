@@ -1,16 +1,16 @@
-h1. Tint Browser
+h1. Imlie
 
 This project is licensed under the "GPL v3":http://www.gnu.org/licenses/gpl-3.0.en.html license.
 
-To build it, it is needed to clone the "Tint Browser Addon Framework Library":https://github.com/Anasthase/TintBrowserAddonFrameworkLibrary project.
+To build it, it is needed to clone the "Imlie Addon Framework Library":https://github.com/Anasthase/ImlieAddonFrameworkLibrary project.
 
 h1. Writting addons
 
-See "TintBrowserSampleAddon":https://github.com/Anasthase/TintBrowserSampleAddon .
+See "ImlieSampleAddon":https://github.com/Anasthase/TintBrowserSampleAddon .
 
-h1. How to translate Tint Browser in your language
+h1. How to translate Imlie in your language
 
-Before starting a translation, you must agree that your work will be released under the same license as Tint Browser, e.g. "GPL version 3":http://www.gnu.org/licenses/gpl-3.0.en.html. Also do not forget that a software translation is not a one-shot work, and that new translations may be needed after your initial work.
+Before starting a translation, you must agree that your work will be released under the same license as Imlie, e.g. "GPL version 3":http://www.gnu.org/licenses/gpl-3.0.en.html. Also do not forget that a software translation is not a one-shot work, and that new translations may be needed after your initial work.
 
 Translations are done is a language-specific XML file. A single translation string look like this :
 
@@ -22,7 +22,7 @@ h2. Translation steps
 
 h3. Get the last reference language file
 
-"https://raw.github.com/Anasthase/TintBrowser/master/res/values/strings.xml":https://raw.github.com/Anasthase/TintBrowser/master/res/values/strings.xml
+"https://raw.github.com/Anasthase/Imlie/master/res/values/strings.xml":https://raw.github.com/Anasthase/TintBrowser/master/res/values/strings.xml
 
 Then select “Save as...” in your browser, and save it where you want on your computer.
 
@@ -66,4 +66,4 @@ h4. Misc.
 
 h2. Submit your translation
 
-Either send me an e-mail, with your modified file and the language you translated, or open an "issue":https://github.com/Anasthase/TintBrowser/issues and post your file there. 
+Either send me an e-mail, with your modified file and the language you translated, or open an "issue":https://github.com/Anasthase/Imlie/issues and post your file there. 
