@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-   Tjapoe Ghoemakker Android ke khatien. Internet ke sab se pehla ghoemakker djaun ek Sarnám ke bhasa mè banail hai. 
+   Imlie Ghoemakker Android ke khatien. Internet ke sab se pehla ghoemakker djaun ek Sarnám ke bhasa mè banail hai. 
   
-   Bhasa aur modification copyright - Aristorat aur DS Hwang / Based on Tjapoe Browser - Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
+   Bhasa aur modification copyright - Aristorat aur DS Hwang / Based on Imlie Browser - Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
@@ -14,17 +14,17 @@
    GNU General Public License for more details.
  -->
 <resources>
-  <string name="ApplicationName">Tjapoe Browser [Ghoemakkar]</string>
-  <string name="ApplicationDescription">Tjapoe Browser ego khoolal-dhaara ghoemakkar hai, Android khatien.</string>
+  <string name="ApplicationName">Imlie Browser [Ghoemakkar]</string>
+  <string name="ApplicationDescription">Imlie Browser ego khoolal-dhaara ghoemakkar hai, Android khatien.</string>
   <string name="AboutVersionText">Kiesiem: %1$s (%2$s)</string>
   <string name="AboutLicenseText">Rakam ke Hoekoem: GPLv3</string>
-  <string name="AboutUrlText">https://github.com/SarnamiD/Tjapoe</string>
-  <string name="PermissionReadBookmarksLabel">Tjapoe Browser ke sab pahietjaan taakal-djaai</string>
-  <string name="PermissionReadBookmarksDescription">App ki add-on djaun doesar manai banail hai, òke mag hai Tjapoe Browser ke itihaas aur sab pahietjaan ke taakhe ke. </string>
-  <string name="PermissionWriteBookmarksLabel">Tjapoe Browser ki pahietjaan banaaw.</string>
-  <string name="PermissionWriteBookmarksDescription">Hoekoem de, application ki add-on djaun doesar manai se banawal hai, Tjapoe Browser ke sab itihaas aur pahietjaan liekhe ke. </string>
-  <string name="PermissionBindAddonServiceLabel">Hoekoem de chale ke, Tjapoe Browser ke addon-kaaran djaun hai. </string>
-  <string name="PermissionBindAddonServiceDescription">Hoekoem de, doesar application ke, Tjapoe Browser addon services leke chale ke. Khalie Tjapoe Browser ke apne ehi hoekoem chaahin rehe ke. </string>
+  <string name="AboutUrlText">https://github.com/SarnamiD/Imlie</string>
+  <string name="PermissionReadBookmarksLabel">Imlie Browser ke sab pahietjaan taakal-djaai</string>
+  <string name="PermissionReadBookmarksDescription">App ki add-on djaun doesar manai banail hai, òke mag hai Imlie Browser ke itihaas aur sab pahietjaan ke taakhe ke. </string>
+  <string name="PermissionWriteBookmarksLabel">Imlie Browser ki pahietjaan banaaw.</string>
+  <string name="PermissionWriteBookmarksDescription">Hoekoem de, application ki add-on djaun doesar manai se banawal hai, Imlie Browser ke sab itihaas aur pahietjaan liekhe ke. </string>
+  <string name="PermissionBindAddonServiceLabel">Hoekoem de chale ke, Imlie Browser ke addon-kaaran djaun hai. </string>
+  <string name="PermissionBindAddonServiceDescription">Hoekoem de, doesar application ke, Imlie Browser addon services leke chale ke. Khalie Tjapoe Browser ke apne ehi hoekoem chaahin rehe ke. </string>
   <string name="OK">Accha</string>
   <string name="Cancel">Rokh</string>
   <string name="Yes">Ha</string>
