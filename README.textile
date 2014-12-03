@@ -11,6 +11,7 @@ Both Mauritian Hindustani and Fijian Hindi are sister languages of Sarnámi and 
 
 h1. 2. Why we did this?
 
+
 Our aim is to show that Sarnámi Hindustani is not an artefact or remnant of our cultural heritage, but an actual living language. People who do know the language either take it for granted or prefer to speak a language with more status (Dutch, Hindi).
 Main purpose is to show that it is still possible to innovate in this language and new things can be created.
 
@@ -72,11 +73,17 @@ Open an "issue":https://github.com/SarnamiD/Imlie/issues and post your file ther
 
 
 h2. Note / Dhanbaad
+
+
 Special thanks to the developers and contributors of the Tint browser on which we based the Imlie.
+
 Without Anasthase's hard work, this would not have been possible.
+
 Luxtella, Korean visionary and now Sarnami legend, thank you!
 
 h2. More information:
+
+
 About Sarnámi: http://en.wikipedia.org/wiki/Caribbean_Hindustani
 http://nl.wikipedia.org/wiki/Sarnami_Hindoestani (Dutch)
 http://en.wikipedia.org/wiki/Indian_indenture_system - Where the language originated
