@@ -4,39 +4,34 @@ This project is licensed under the "GPL v3":http://www.gnu.org/licenses/gpl-3.0.
 
 To build it, it is needed to clone the "Imlie Addon Framework Library":https://github.com/Anasthase/ImlieAddonFrameworkLibrary project.
 
-h1. Writting addons
+h1. What this is / Kountji hai ie?
 
-See "ImlieSampleAddon":https://github.com/Anasthase/TintBrowserSampleAddon .
+Imlie is the first browser (and app) that has been published in any Surinamese language. Imlie has been published in Sarnámi Hindustani, a language that is part of the Caribbean Hindustani umbrella and an offshoot of Bhojpuri. 
+Both Mauritian Hindustani and Fijian Hindi are sister languages of Sarnámi and to a large degree mutually intellegible.
 
-h1. How to translate Imlie in your language
+h1. Why we did this?
 
-Before starting a translation, you must agree that your work will be released under the same license as Imlie, e.g. "GPL version 3":http://www.gnu.org/licenses/gpl-3.0.en.html. Also do not forget that a software translation is not a one-shot work, and that new translations may be needed after your initial work.
+Our aim is to show that Sarnámi Hindustani is not an artefact or remnant of our cultural heritage, but an actual living language. People who do know the language either take it for granted or prefer to speak a language with more status (Dutch, Hindi).
+Main purpose is to show that it is still possible to innovate in this language and new things can be created.
 
-Translations are done is a language-specific XML file. A single translation string look like this :
+h2. Why Imlie?
+For every Apple, there's an Imlie. Chaahe khatta ki mietha...maar saareke!
 
-bq. &lt;string name=&quot;Bookmarks&quot;&gt;Bookmarks&lt;/string&gt;
+h2. I am a Sarnámi speaker - It looks funny!
 
-Where the part in the name parameter is the string key, which you must leave unchanged, and the part between ??&lt;string …&gt;?? and ??&lt;/string&gt;?? the translated string.
+Though I understand and speak Sarnámi, this is also to varying levels of fluency. If you feel you can improve the translation, then please free to contribute to the source string file! (Link below).
 
-h2. Translation steps
+h2. Please help to make this the best translation possible! Contribute! Use the source file below.
 
-h3. Get the last reference language file
-
-"https://raw.github.com/Anasthase/Imlie/master/res/values/strings.xml":https://raw.github.com/Anasthase/TintBrowser/master/res/values/strings.xml
+"https://raw.github.com/Sarnami/Imlie/master/res/values/strings.xml":https://raw.github.com/SarnamiD/Imlie/master/res/values/strings.xml
 
 Then select “Save as...” in your browser, and save it where you want on your computer.
 
 h3. Translate
 
-Open the file you downloaded with a decent text editor (hint: Windows Notepad is *NOT* a decent text editor). Do not change the default encoding (UTF-8) and the default line breaks (Unix style).
+Open the file you downloaded with a xml editor . Do not change the default encoding (UTF-8) and the default line breaks (Unix style).
 
-Translate every required strings.
-
-h3. Specials cases
-
-h4. String-arrays
-
-Do not translate anything within a ??&lt;string-array&gt;?? tag.
+Translate alls strings, but do not translate anything within a ??&lt;string-array&gt;?? tag.
 
 h4. Apostrophes
 
@@ -56,7 +51,7 @@ bq. &lt;string name=&quot;SslWarningsHeader&quot;&gt;There are problems with the
 
 bq. &lt;string name=&quot;HttpAuthenticationDialogDialogTitle&quot;&gt;Sign in to %1$s - %2$s&lt;/string&gt;
 
-When there is several values to dynamically change in a single string, the %s part change to %1$s, %2$s, etc. You may change the order of the %s in your translation, if its make sense in you language, e.g. you can do something like:
+When there are several values to dynamically change in a single string, the %s part change to %1$s, %2$s, etc. You may change the order of the %s in your translation, if its make sense in you language, e.g. you can do something like:
 
 bq. &lt;string name=&quot;HttpAuthenticationDialog.DialogTitle&quot;&gt;SomeText %2$s AnotherText %1$s&lt;/string&gt;
 
@@ -64,6 +59,17 @@ h4. Misc.
 
 * Use &#8230; instead of writing three points (...);
 
-h2. Submit your translation
+h4. Submit your translation
 
-Either send me an e-mail, with your modified file and the language you translated, or open an "issue":https://github.com/Anasthase/Imlie/issues and post your file there. 
+Open an "issue":https://github.com/SarnamiD/Imlie/issues and post your file there. Alternately, send me the file per e-mail.
+
+
+h3. Note / Dhanbaad
+Special thanks to the developers and contributors of the Tint browser on which we based the Imlie.
+
+h4. More information:
+About Sarnámi: http://en.wikipedia.org/wiki/Caribbean_Hindustani
+http://nl.wikipedia.org/wiki/Sarnami_Hindoestani (Dutch)
+http://en.wikipedia.org/wiki/Indian_indenture_system - Where the language originated
+http://en.wikipedia.org/wiki/Bhojpuri_language / http://en.wikipedia.org/wiki/Awadhi_language  - Roots of Sarnámi
+
