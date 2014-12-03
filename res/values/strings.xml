@@ -39,8 +39,8 @@
   <string name="All">Sab kuch</string>
   <string name="Bookmarks">Pahietjaan</string>
   <string name="Preferences">Magadj</string>
-  <string name="UrlBarUrlDefaultSubTitle">Dabaaw, ek URL ki khojwai ghoesère ke khatien. </string>
-  <string name="UrlBarUrlHint">URL ki khoj ghoeseer.</string>
+  <string name="UrlBarUrlDefaultSubTitle">Dabaaw aur sitewa dhar, djaunpe maange djaai </string>
+  <string name="UrlBarUrlHint">URL ki djauntjie maange khodje dhar ópa.</string>
   <string name="ShareChooserTitle">Dekhaaw isè </string>
   <string name="FileChooserPrompt">File tjoen, oepar pathaawe ke khat. </string>
   <string name="Download">Hiyaan Laaw </string>
