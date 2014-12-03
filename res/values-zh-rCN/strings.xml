@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-	<string name="ApplicationName">Tint Browser</string>
+	<string name="ApplicationName">Imlie</string>
 	<string name="ApplicationDescription">Tint浏览器是Android下的开源项目。</string>
 	
 	<string name="AboutVersionText">版本: %1$s (%2$s)</string>
 	<string name="AboutLicenseText">协议: GPLv3</string>
-	<string name="AboutUrlText">https://github.com/Anasthase/TintBrowser</string>
+	<string name="AboutUrlText">https://github.com/Anasthase/Imlie</string>
 	<string name="AboutChangelogText">更新日志:</string>
 	
 	<string name="PermissionReadBookmarksLabel">打开浏览器书签</string>

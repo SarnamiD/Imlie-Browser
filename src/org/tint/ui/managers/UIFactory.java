@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -16,7 +16,7 @@
 package org.tint.ui.managers;
 
 import org.tint.R;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.utils.Constants;
 
 import android.content.Context;
@@ -78,7 +78,7 @@ public class UIFactory {
 		}
 	}
 	
-	public static UIManager createUIManager(TintBrowserActivity activity) {
+	public static UIManager createUIManager(ImlieActivity activity) {
 		checkInit(activity);
 		
 		switch (sUIType) {

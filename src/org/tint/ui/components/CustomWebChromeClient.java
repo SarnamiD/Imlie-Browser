@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -18,7 +18,7 @@ package org.tint.ui.components;
 import org.tint.R;
 import org.tint.tasks.UpdateFaviconTask;
 import org.tint.tasks.UpdateHistoryTask;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.managers.UIManager;
 import org.tint.utils.Constants;
 
@@ -102,7 +102,7 @@ public class CustomWebChromeClient extends WebChromeClient {
 		i.setType((acceptType == null || acceptType.isEmpty()) ? "*/*" : acceptType);
 		mUIManager.getMainActivity().startActivityForResult(
 				Intent.createChooser(i,  mUIManager.getMainActivity().getString(R.string.FileChooserPrompt)),
-				TintBrowserActivity.ACTIVITY_OPEN_FILE_CHOOSER);
+				ImlieActivity.ACTIVITY_OPEN_FILE_CHOOSER);
 	}
 	
 	public void openFileChooser(ValueCallback<Uri> uploadMsg) {
@@ -112,7 +112,7 @@ public class CustomWebChromeClient extends WebChromeClient {
 		i.setType("*/*");
 		mUIManager.getMainActivity().startActivityForResult(
 				Intent.createChooser(i,  mUIManager.getMainActivity().getString(R.string.FileChooserPrompt)),
-				TintBrowserActivity.ACTIVITY_OPEN_FILE_CHOOSER);
+				ImlieActivity.ACTIVITY_OPEN_FILE_CHOOSER);
 	}
 	
 	@Override

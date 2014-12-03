@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -28,7 +28,7 @@ import org.tint.providers.BookmarksWrapper;
 import org.tint.tasks.ThumbnailSaver;
 import org.tint.ui.activities.BookmarksActivity;
 import org.tint.ui.activities.EditBookmarkActivity;
-import org.tint.ui.activities.TintBrowserActivity;
+import org.tint.ui.activities.ImlieActivity;
 import org.tint.ui.components.CustomWebView;
 import org.tint.ui.dialogs.GeolocationPermissionsDialog;
 import org.tint.ui.fragments.BaseWebViewFragment;
@@ -80,7 +80,7 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
     
     private GeolocationPermissionsDialog mGeolocationPermissionsDialog;
 	
-	protected TintBrowserActivity mActivity;	
+	protected ImlieActivity mActivity;	
 	protected ActionBar mActionBar;
 	protected FragmentManager mFragmentManager;
 	
@@ -94,7 +94,7 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
 	
 	private Handler mHandler;
 	
-	public BaseUIManager(TintBrowserActivity activity) {
+	public BaseUIManager(ImlieActivity activity) {
 		mActivity = activity;
 		
 		mActionBar = mActivity.getActionBar();
@@ -134,7 +134,7 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
 	}
 	
 	@Override
-	public TintBrowserActivity getMainActivity() {
+	public ImlieActivity getMainActivity() {
 		return mActivity;
 	}
 	
@@ -217,7 +217,7 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
 	@Override
 	public void openBookmarksActivityForResult() {
 		Intent i = new Intent(mActivity, BookmarksActivity.class);
-    	mActivity.startActivityForResult(i, TintBrowserActivity.ACTIVITY_BOOKMARKS);
+    	mActivity.startActivityForResult(i, ImlieActivity.ACTIVITY_BOOKMARKS);
 	}
 	
 	@Override
@@ -315,43 +315,43 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
 					int actionId = intent.getIntExtra(Constants.EXTRA_ACTION_ID, -1);
 					
 					switch(actionId) {
-					case TintBrowserActivity.CONTEXT_MENU_OPEN:
+					case ImlieActivity.CONTEXT_MENU_OPEN:
 						if (HitTestResult.SRC_IMAGE_ANCHOR_TYPE == intent.getIntExtra(Constants.EXTRA_HIT_TEST_RESULT, -1)) {
-							requestHrefNode(TintBrowserActivity.CONTEXT_MENU_OPEN);
+							requestHrefNode(ImlieActivity.CONTEXT_MENU_OPEN);
 						} else {
 							loadUrl(intent.getStringExtra(Constants.EXTRA_URL));
 						}
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB:
+					case ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB:
 						
 						if (HitTestResult.SRC_IMAGE_ANCHOR_TYPE == intent.getIntExtra(Constants.EXTRA_HIT_TEST_RESULT, -1)) {
-							requestHrefNode(TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, intent.getBooleanExtra(Constants.EXTRA_INCOGNITO, false));
+							requestHrefNode(ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB, intent.getBooleanExtra(Constants.EXTRA_INCOGNITO, false));
 						} else {						
 							addTab(intent.getStringExtra(Constants.EXTRA_URL), false, intent.getBooleanExtra(Constants.EXTRA_INCOGNITO, false));
 						}
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND:
+					case ImlieActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND:
 						
 						if (HitTestResult.SRC_IMAGE_ANCHOR_TYPE == intent.getIntExtra(Constants.EXTRA_HIT_TEST_RESULT, -1)) {
-							requestHrefNode(TintBrowserActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND, intent.getBooleanExtra(Constants.EXTRA_INCOGNITO, false));
+							requestHrefNode(ImlieActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND, intent.getBooleanExtra(Constants.EXTRA_INCOGNITO, false));
 						} else {						
 							addTab(intent.getStringExtra(Constants.EXTRA_URL), true, intent.getBooleanExtra(Constants.EXTRA_INCOGNITO, false));
 						}
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_COPY:
+					case ImlieActivity.CONTEXT_MENU_COPY:
 						if (HitTestResult.SRC_IMAGE_ANCHOR_TYPE == intent.getIntExtra(Constants.EXTRA_HIT_TEST_RESULT, -1)) {
-							requestHrefNode(TintBrowserActivity.CONTEXT_MENU_COPY);
+							requestHrefNode(ImlieActivity.CONTEXT_MENU_COPY);
 						} else {
 							ApplicationUtils.copyTextToClipboard(mActivity, intent.getStringExtra(Constants.EXTRA_URL), mActivity.getResources().getString(R.string.UrlCopyToastMessage));
 						}
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_DOWNLOAD:
+					case ImlieActivity.CONTEXT_MENU_DOWNLOAD:
 						if (HitTestResult.SRC_IMAGE_ANCHOR_TYPE == intent.getIntExtra(Constants.EXTRA_HIT_TEST_RESULT, -1)) {
-							requestHrefNode(TintBrowserActivity.CONTEXT_MENU_DOWNLOAD);
+							requestHrefNode(ImlieActivity.CONTEXT_MENU_DOWNLOAD);
 						} else {
 							DownloadItem item = new DownloadItem(intent.getStringExtra(Constants.EXTRA_URL));
 
@@ -364,9 +364,9 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
 						}
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_SHARE:
+					case ImlieActivity.CONTEXT_MENU_SHARE:
 						if (HitTestResult.SRC_IMAGE_ANCHOR_TYPE == intent.getIntExtra(Constants.EXTRA_HIT_TEST_RESULT, -1)) {
-							requestHrefNode(TintBrowserActivity.CONTEXT_MENU_SHARE);
+							requestHrefNode(ImlieActivity.CONTEXT_MENU_SHARE);
 						} else {
 							ApplicationUtils.sharePage(mActivity, null, intent.getStringExtra(Constants.EXTRA_URL));
 						}
@@ -600,23 +600,23 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
                     }
                     
                     switch (msg.arg1) {
-                    case TintBrowserActivity.CONTEXT_MENU_OPEN:
+                    case ImlieActivity.CONTEXT_MENU_OPEN:
                     	loadUrl(url);
                     	break;
                     
-					case TintBrowserActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB:
+					case ImlieActivity.CONTEXT_MENU_OPEN_IN_NEW_TAB:
 						addTab(url, false, msg.arg2 > 0 ? true : false);
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND:
+					case ImlieActivity.CONTEXT_MENU_OPEN_IN_BACKGROUND:
 						addTab(url, true, msg.arg2 > 0 ? true : false);
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_COPY:
+					case ImlieActivity.CONTEXT_MENU_COPY:
 						ApplicationUtils.copyTextToClipboard(mActivity, url, mActivity.getResources().getString(R.string.UrlCopyToastMessage));
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_DOWNLOAD:
+					case ImlieActivity.CONTEXT_MENU_DOWNLOAD:
 						DownloadItem item = new DownloadItem(url);
 
 						long id = ((DownloadManager) mActivity.getSystemService(Context.DOWNLOAD_SERVICE)).enqueue(item);
@@ -627,7 +627,7 @@ public abstract class BaseUIManager implements UIManager {//, WebViewFragmentLis
 						Toast.makeText(mActivity, String.format(mActivity.getString(R.string.DownloadStart), item.getFileName()), Toast.LENGTH_SHORT).show();
 						break;
 						
-					case TintBrowserActivity.CONTEXT_MENU_SHARE:
+					case ImlieActivity.CONTEXT_MENU_SHARE:
 						ApplicationUtils.sharePage(mActivity, null, url);
 						break;
 

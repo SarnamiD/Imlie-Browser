@@ -1,5 +1,5 @@
 /*
- * Tint Browser for Android
+ * Imlie for Android
  * 
  * Copyright (C) 2012 - to infinity and beyond J. Devauchelle and contributors.
  *
@@ -61,7 +61,7 @@ import android.view.View.OnClickListener;
 import android.webkit.WebIconDatabase;
 import android.widget.Toast;
 
-public class TintBrowserActivity extends Activity {
+public class ImlieActivity extends Activity {
     
 	public static final int ACTIVITY_BOOKMARKS = 0;
 	public static final int ACTIVITY_OPEN_FILE_CHOOSER = 1;
