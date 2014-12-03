@@ -15,6 +15,8 @@ h1. 2. Why we did this?
 Our aim is to show that Sarnámi Hindustani is not an artefact or remnant of our cultural heritage, but an actual living language. People who do know the language either take it for granted or prefer to speak a language with more status (Dutch, Hindi).
 Main purpose is to show that it is still possible to innovate in this language and new things can be created.
 
+This is an open browser, meaning that anyone who is confident that they can improve this translation are free and encouraged to contribute. The more the merrier!
+
 h2. 3. Why Imlie? 
 
 h4. For every Apple, there's an Imlie. 
@@ -24,6 +26,9 @@ Chaahe khatta ki mietha...maar saareke!
 h2. 4. I am a Sarnámi speaker - It looks funny!
 
 Though I understand and speak Sarnámi, this is also to varying levels of fluency. If you feel you can improve the translation, then please free to contribute to the source string file! (Link below).
+I used the (to my knowledge) only 2 Sarnámi dictionaries in existence and amended the orthography here and there. 
+The cool thing about scarcely documented languages is that you can think creatively on how to phrase and word things. Some of the things that you read and see are a result of this thinking process.
+
 
 h2. 5. Please help to make this the best translation possible! 
 Contribute! 
