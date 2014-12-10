@@ -16,7 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <org.tint.ui.preferences.HomepageSpinnerPreference
+    <org.sarnamid.ui.preferences.HomepageSpinnerPreference
         android:dialogTitle="@string/PreferenceHomePageDialogTitle"
         android:key="PREFERENCE_HOME_PAGE"
         android:negativeButtonText="@string/Cancel"
@@ -24,7 +24,7 @@
         android:summary="@string/PreferenceGeneralHomepageSummary"
         android:title="@string/PreferenceGeneralHomepageTitle" />
 
-    <org.tint.ui.preferences.SearchEnginePreference
+    <org.sarnamid.ui.preferences.SearchEnginePreference
         android:key="PREFERENCE_SEARCH_URL"
         android:summary="@string/PreferenceGeneralSearchUrlSummary"
         android:title="@string/PreferenceGeneralSearchUrlTitle" />

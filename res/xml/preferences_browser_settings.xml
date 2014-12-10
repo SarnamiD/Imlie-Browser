@@ -37,7 +37,7 @@
 			android:defaultValue="ON_DEMAND"
 			android:key="PREFERENCE_PLUGINS" />
     
-    <org.tint.ui.preferences.UserAgentSpinnerPreference
+    <org.sarnamid.ui.preferences.UserAgentSpinnerPreference
             android:title="@string/PreferenceUserAgentTitle"
             android:summary="@string/PreferenceUserAgentSummary"
             android:dialogTitle="@string/PreferenceUserAgentDialogTitle"            

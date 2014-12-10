@@ -16,19 +16,19 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/org.tint" >
+    xmlns:app="http://schemas.android.com/apk/res/org.sarnamid" >
 
-    <org.tint.ui.preferences.AboutPreference />
+    <org.sarnamid.ui.preferences.AboutPreference />
 
-    <org.tint.ui.preferences.WebViewDialogPreference
+    <org.sarnamid.ui.preferences.WebViewDialogPreference
         android:title="@string/AboutChangelogTitle"
         app:html="@raw/changelog_html" />
     
-    <org.tint.ui.preferences.WebViewDialogPreference
+    <org.sarnamid.ui.preferences.WebViewDialogPreference
         android:title="@string/AboutContributorsTitle"
         app:html="@raw/contributors_html" />
     
-    <org.tint.ui.preferences.WebViewDialogPreference
+    <org.sarnamid.ui.preferences.WebViewDialogPreference
         android:title="@string/AboutLicensesTitle"
         app:html="@raw/licenses_html" />
 

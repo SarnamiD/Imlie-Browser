@@ -17,27 +17,27 @@
 
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <header android:fragment="org.tint.ui.preferences.GeneralPreferencesFragment"            
+    <header android:fragment="org.sarnamid.ui.preferences.GeneralPreferencesFragment"            
             android:title="@string/PreferenceHeaderGeneralSettingsTitle" />
     
-	<header android:fragment="org.tint.ui.preferences.BrowserPreferencesFragment"            
+	<header android:fragment="org.sarnamid.ui.preferences.BrowserPreferencesFragment"            
             android:title="@string/PreferenceHeaderBrowserSettingsTitle" />
 	
-	<header android:fragment="org.tint.ui.preferences.PrivacyPreferencesFragment"            
+	<header android:fragment="org.sarnamid.ui.preferences.PrivacyPreferencesFragment"            
             android:title="@string/PreferenceHeaderPrivacySettingsTitle" />
 	
-	<header android:fragment="org.tint.ui.preferences.AccessibilityPreferencesFragment"            
+	<header android:fragment="org.sarnamid.ui.preferences.AccessibilityPreferencesFragment"            
             android:title="@string/PreferenceHeaderAccessibilityTitle" />
 	
 	<!--
-	<header android:fragment="org.tint.ui.preferences.AdvancedPreferencesFragment"            
+	<header android:fragment="org.sarnamid.ui.preferences.AdvancedPreferencesFragment"            
             android:title="@string/PreferenceHeaderAdvancedSettingsTitle" />
     -->
 	
-	<header android:fragment="org.tint.ui.preferences.AddonsFragment"            
+	<header android:fragment="org.sarnamid.ui.preferences.AddonsFragment"            
             android:title="@string/PreferenceHeaderAddonsTitle" />
 	
-	<header android:fragment="org.tint.ui.preferences.AboutFragment"            
+	<header android:fragment="org.sarnamid.ui.preferences.AboutFragment"            
             android:title="@string/PreferenceHeaderAboutTitle" />
     
 </preference-headers>

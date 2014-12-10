@@ -28,7 +28,7 @@
         android:background="#dcdcdc"
         android:orientation="vertical" />
 
-    <org.tint.ui.views.TabletUrlBar
+    <org.sarnamid.ui.views.TabletUrlBar
         android:id="@+id/UrlBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -126,7 +126,7 @@
                 android:src="@android:drawable/ic_menu_add" />
         </LinearLayout>
 
-        <org.tint.ui.views.TabsScroller
+        <org.sarnamid.ui.views.TabsScroller
             android:id="@+id/tabs_scroller"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -154,7 +154,7 @@
             android:padding="0dip"
             android:scaleType="fitXY" >
 
-            <org.tint.ui.components.BadgedImageView
+            <org.sarnamid.ui.components.BadgedImageView
                 android:id="@+id/FaviconView"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -166,7 +166,7 @@
                 android:paddingTop="5dip"
                 android:src="@drawable/ic_tabs" />
 
-            <org.tint.ui.views.PhoneUrlBar
+            <org.sarnamid.ui.views.PhoneUrlBar
                 android:id="@+id/UrlBar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -17,14 +17,14 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/org.tint" >
+    xmlns:app="http://schemas.android.com/apk/res/org.sarnamid" >
     
     <PreferenceCategory android:title="@string/PreferenceCategoryTextSizeTitle">
         
-        <org.tint.ui.preferences.AccessibilityPreviewPreference
+        <org.sarnamid.ui.preferences.AccessibilityPreviewPreference
             android:title="@string/PreferenceAccessibilityTextSizePreviewTitle" />
         
-        <org.tint.ui.preferences.SeekBarPreference
+        <org.sarnamid.ui.preferences.SeekBarPreference
             android:title="@string/PreferenceAccessibilityTextScalingTitle"
             android:defaultValue="100"
             app:minValue="50"
@@ -33,7 +33,7 @@
             app:stepValue="5"
             android:key="PREFERENCE_TEXT_SCALING" />
         
-        <org.tint.ui.preferences.SeekBarPreference
+        <org.sarnamid.ui.preferences.SeekBarPreference
             android:title="@string/PreferenceAccessibilityMinimumFontSizeTitle"
             android:summary="@string/PreferenceAccessibilityMinimumFontSizeSummary"
             android:defaultValue="1"
@@ -52,7 +52,7 @@
         	android:summary="@string/PreferenceAccessibilityInvertedRenderingSummary"
         	android:title="@string/PreferenceAccessibilityInvertedRenderingTitle" />
     	
-    	<org.tint.ui.preferences.SeekBarPreference
+    	<org.sarnamid.ui.preferences.SeekBarPreference
             android:title="@string/PreferenceAccessibilityInvertedRenderingContrastTitle"
             android:defaultValue="100"
             app:minValue="100"

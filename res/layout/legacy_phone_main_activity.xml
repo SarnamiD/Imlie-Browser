@@ -63,7 +63,7 @@
             android:layout_toLeftOf="@+id/UrlBar"
             android:visibility="invisible" />
 
-        <org.tint.ui.views.PhoneUrlBar
+        <org.sarnamid.ui.views.PhoneUrlBar
             android:id="@+id/UrlBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

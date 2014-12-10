@@ -17,7 +17,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     
-    <org.tint.ui.preferences.ClearPreference
+    <org.sarnamid.ui.preferences.ClearPreference
             android:title="@string/PreferencePrivacyClearCacheTitle"
             android:summary="@string/PreferencePrivacyClearCacheSummary"
             android:dialogTitle="@string/Clear"
@@ -45,7 +45,7 @@
 			android:numeric="integer"
 			android:key="PREFERENCE_HISTORY_SIZE" />
         
-        <org.tint.ui.preferences.ClearPreference
+        <org.sarnamid.ui.preferences.ClearPreference
             android:title="@string/PreferencePrivacyClearHistoryTitle"
             android:summary="@string/PreferencePrivacyClearHistorySummary"
             android:dialogTitle="@string/Clear"
@@ -64,7 +64,7 @@
 			android:defaultValue="true"
 			android:key="PREFERENCE_ACCEPT_COOKIES" />
         
-        <org.tint.ui.preferences.ClearPreference
+        <org.sarnamid.ui.preferences.ClearPreference
             android:title="@string/PreferencePrivacyClearCookiesTitle"
             android:summary="@string/PreferencePrivacyClearCookiesSummary"
             android:dialogTitle="@string/Clear"
@@ -83,7 +83,7 @@
 			android:defaultValue="true"
 			android:key="PREFERENCE_REMEMBER_FORM_DATA" />
         
-        <org.tint.ui.preferences.ClearPreference
+        <org.sarnamid.ui.preferences.ClearPreference
             android:title="@string/PreferencePrivacyClearFormDataTitle"
             android:summary="@string/PreferencePrivacyClearFormDataSummary"
             android:dialogIcon="@android:drawable/ic_dialog_alert"
@@ -103,7 +103,7 @@
 			android:defaultValue="true"
 			android:key="PREFERENCE_ENABLE_GEOLOCATION" />
         
-        <org.tint.ui.preferences.ClearPreference
+        <org.sarnamid.ui.preferences.ClearPreference
             android:title="@string/PreferencePrivacyClearGeolocationTitle"
             android:summary="@string/PreferencePrivacyClearGeolocationSummary"
             android:dialogTitle="@string/Clear"
@@ -122,7 +122,7 @@
 			android:defaultValue="true"
 			android:key="PREFERENCE_REMEMBER_PASSWORDS" />
         
-        <org.tint.ui.preferences.ClearPreference
+        <org.sarnamid.ui.preferences.ClearPreference
             android:title="@string/PreferencePrivacyClearPasswordsTitle"
             android:summary="@string/PreferencePrivacyClearPasswordsSummary"
             android:dialogIcon="@android:drawable/ic_dialog_alert"
