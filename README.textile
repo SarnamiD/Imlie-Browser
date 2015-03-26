@@ -1,0 +1,97 @@
+h2. Imlie - Tu poedj, ham bataab (Q&A, P&B)
+
+This project is licensed under the "GPL v3":http://www.gnu.org/licenses/gpl-3.0.en.html license.
+
+To build on this, you need to clone the "TintBrowser Addon Framework Library":https://github.com/Anasthase/ImlieAddonFrameworkLibrary project.
+
+h1. 1. What this is / Kountji hai ie?
+
+Imlie is the first browser (and app) that has been published in any Surinamese language. Imlie has been published in Sarnámi Hindustani, a language that is part of the Caribbean Hindustani umbrella and an offshoot of Bhojpuri. 
+Both Mauritian Hindustani and Fijian Hindi are sister languages of Sarnámi and to a large degree mutually intellegible.
+
+h1. 2. Why we did this?
+
+
+Our aim is to show that Sarnámi Hindustani is not an artefact or remnant of our cultural heritage, but an actual living language. People who do know the language either take it for granted or prefer to speak a language with more status (Dutch, Hindi).
+Main purpose is to show that it is still possible to innovate in this language and new things can be created.
+
+This is an open browser, meaning that anyone who is confident that they can improve this translation are free and encouraged to contribute. The more the merrier!
+
+h2. 3. Why Imlie? 
+
+h4. For every Apple, there's an Imlie. 
+
+Chaahe khatta ki mietha...maar saareke!
+
+h2. 4. I am a Sarnámi speaker - It looks funny!
+
+Though I understand and speak Sarnámi, this is also to varying levels of fluency. If you feel you can improve the translation, then please free to contribute to the source string file! (Link below).
+I used the (to my knowledge) only 2 Sarnámi dictionaries in existence and amended the orthography here and there. 
+The cool thing about scarcely documented languages is that you can think creatively on how to phrase and word things. Some of the things that you read and see are a result of this thinking process.
+
+
+h2. 5. Please help to make this the best translation possible! 
+Contribute! 
+
+Use the source file below.
+
+"https://raw.github.com/Sarnami/Imlie/master/res/values/strings.xml":https://raw.github.com/SarnamiD/Imlie/master/res/values/strings.xml
+
+Then select “Save as...” in your browser, and save it where you want on your computer.
+
+h2. 6. Hey SarnamiD - Why isn't this file written in Sarnámi or Dutch?
+
+All in good time.
+
+
+h3. 7. Translate
+
+Open the file you downloaded with a xml editor . Do not change the default encoding (UTF-8) and the default line breaks (Unix style).
+
+Translate alls strings, but do not translate anything within a ??&lt;string-array&gt;?? tag.
+
+h4. 7.1 Apostrophes
+
+Apostrophes must be preceded by a “\” character. 
+
+Example:
+
+bq. &lt;string name=&quot;ContextMenuCopyLinkUrl&quot;&gt;Copier l\'adresse du lien&lt;/string&gt;
+
+h4. 7.2 Formatted strings
+
+Some strings may contains dynamic values, filled at runtime by the application. The place where the dynamics values are inserted in the string are represented by a %s, %1$s %2$s, etc. You must include the original %s-type in your translation, at the appropriate place.
+
+Examples:
+
+bq. &lt;string name=&quot;SslWarningsHeader&quot;&gt;There are problems with the security certificate for this site (%s).&lt;/string&gt;
+
+bq. &lt;string name=&quot;HttpAuthenticationDialogDialogTitle&quot;&gt;Sign in to %1$s - %2$s&lt;/string&gt;
+
+When there are several values to dynamically change in a single string, the %s part change to %1$s, %2$s, etc. You may change the order of the %s in your translation, if its make sense in you language, e.g. you can do something like:
+
+bq. &lt;string name=&quot;HttpAuthenticationDialog.DialogTitle&quot;&gt;SomeText %2$s AnotherText %1$s&lt;/string&gt;
+
+
+h4. 7.3 Submit your translation
+
+Open an "issue":https://github.com/SarnamiD/Imlie/issues and post your file there. Alternately, send me the file per e-mail.
+
+
+h2. 8. Note / Dhanbaad
+
+
+Special thanks to the developers and contributors of the Tint browser on which we based the Imlie.
+
+Without Anasthase's hard work, this would not have been possible.
+
+Luxtella, Korean visionary and now Sarnami legend, thank you & kamsahamnida!
+
+h2. 9. More information:
+
+
+About Sarnámi: http://en.wikipedia.org/wiki/Caribbean_Hindustani
+http://nl.wikipedia.org/wiki/Sarnami_Hindoestani (Dutch)
+http://en.wikipedia.org/wiki/Indian_indenture_system - Where the language originated
+http://en.wikipedia.org/wiki/Bhojpuri_language / http://en.wikipedia.org/wiki/Awadhi_language  - Roots of Sarnámi
+
