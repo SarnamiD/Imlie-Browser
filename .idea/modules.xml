@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TintBrowser.iml" filepath="$PROJECT_DIR$/TintBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imlie/imlie.iml" filepath="$PROJECT_DIR$/imlie/imlie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tintBrowserAddonFrameworkLibrary/tintBrowserAddonFrameworkLibrary.iml" filepath="$PROJECT_DIR$/tintBrowserAddonFrameworkLibrary/tintBrowserAddonFrameworkLibrary.iml" />
+    </modules>
+  </component>
+</project>
+
