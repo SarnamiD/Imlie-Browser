@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'deep'
+            keyPassword 'suriname'
+            storeFile file('/d/android/AndroidStudioProjects/deepkey.jks')
+            storePassword 'suriname'
+        }
+    }
+    compileSdkVersion 20
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "org.sarnamid"
+        minSdkVersion 14
+        targetSdkVersion 17
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile project(':tintBrowserAddonFrameworkLibrary')
+}
